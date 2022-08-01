@@ -4,7 +4,9 @@ using UnityEngine;
 public class ShipController : MonoBehaviour
 {
     [SerializeField] private Rigidbody shipRigidbody = default;
-    [SerializeField] private FloatReference shipVerticalAcceleartion = default;
+    [SerializeField] private GameObject shipLantern = default;
+    [SerializeField] private FloatReference shipForwardAcceleration = default;
+    [SerializeField] private FloatReference shipVerticalAcceleration = default;
     [SerializeField] private FloatReference shipRotationAcceleration = default;
     private PlayerControls playerControl;
     private void Awake()
@@ -32,12 +34,12 @@ public class ShipController : MonoBehaviour
         }
         if (playerControl.Underwater.Light.triggered)
         {
-            Debug.Log($"Light");
+            shipLantern.SetActive(!shipLantern.activeInHierarchy);
         }
 
         if (playerControl.Underwater.Propulsion.triggered)
         {
-            Debug.Log($"Propulsion");
+            Propulsion();
         }
     }
 
@@ -55,7 +57,13 @@ public class ShipController : MonoBehaviour
     private void Move(float yValue)
     {
         var force = Vector3.zero;
-        force.y = yValue * shipVerticalAcceleartion.Value;
+        force.y = yValue * shipVerticalAcceleration.Value;
+        shipRigidbody.AddForce(force, ForceMode.Acceleration);
+    }
+
+    private void Propulsion()
+    {
+        var force = transform.forward * shipForwardAcceleration.Value;
         shipRigidbody.AddForce(force, ForceMode.Acceleration);
     }
 }

@@ -15,40 +15,16 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 400
-    height: 300
-  m_ShowMode: 0
-  m_Title: 
-  m_RootView: {fileID: 5}
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
-  m_Maximized: 0
---- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PixelRect:
-    serializedVersion: 2
-    x: 0
     y: 43
     width: 1440
     height: 827
   m_ShowMode: 4
-  m_Title: Hierarchy
-  m_RootView: {fileID: 11}
+  m_Title: Game
+  m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
---- !u!114 &3
+--- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,64 +42,15 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 267
-    height: 636
+    height: 562
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 24}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 24}
+  - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 100
-    height: 100
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
-  m_ActualView: {fileID: 0}
-  m_Panes: []
-  m_Selected: 0
-  m_LastSelected: -1
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 4}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 400
-    height: 300
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
-  vertical: 0
-  controlID: 435
---- !u!114 &6
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,18 +65,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 594
+    x: 657
     y: 0
-    width: 277
-    height: 636
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 22}
+    width: 214
+    height: 562
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 22}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &7
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,15 +94,15 @@ MonoBehaviour:
     x: 871
     y: 0
     width: 288
-    height: 636
+    height: 562
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 20}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &8
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,8 +115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 14}
-  - {fileID: 9}
+  - {fileID: 11}
+  - {fileID: 6}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -199,8 +126,8 @@ MonoBehaviour:
   m_MinSize: {x: 500, y: 200}
   m_MaxSize: {x: 40480, y: 16192}
   vertical: 0
-  controlID: 23
---- !u!114 &9
+  controlID: 88
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -221,13 +148,13 @@ MonoBehaviour:
     height: 777
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 21}
-  - {fileID: 17}
+  - {fileID: 18}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &10
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -243,18 +170,18 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 636
+    y: 562
     width: 1159
-    height: 141
+    height: 215
   m_MinSize: {x: 201, y: 141}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 19}
-  - {fileID: 18}
+  - {fileID: 16}
+  - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &11
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,9 +194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 12}
-  - {fileID: 8}
-  - {fileID: 13}
+  - {fileID: 9}
+  - {fileID: 5}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -282,7 +209,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &12
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -304,7 +231,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &13
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -325,7 +252,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &14
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -338,8 +265,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 15}
-  - {fileID: 10}
+  - {fileID: 12}
+  - {fileID: 7}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -349,8 +276,8 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
-  controlID: 29
---- !u!114 &15
+  controlID: 95
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -363,21 +290,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 2}
+  - {fileID: 13}
   - {fileID: 3}
-  - {fileID: 16}
-  - {fileID: 6}
-  - {fileID: 7}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1159
-    height: 636
+    height: 562
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 8096}
   vertical: 0
-  controlID: 30
---- !u!114 &16
+  controlID: 96
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -394,16 +321,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 267
     y: 0
-    width: 327
-    height: 636
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 23}
+    width: 390
+    height: 562
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 23}
+  - {fileID: 20}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &17
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -432,7 +359,7 @@ MonoBehaviour:
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
---- !u!114 &18
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -453,9 +380,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 533
+    y: 635
     width: 1158
-    height: 296
+    height: 194
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -484,8 +411,8 @@ MonoBehaviour:
     m_SearchString: 
   m_ActionsTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 60083202
-    m_LastClickedID: 36833376
+    m_SelectedIDs: 7b3963cd
+    m_LastClickedID: -849135237
     m_ExpandedIDs: c4383290dc7123d6d529dde901b8fcebcc7c2a3a2eb5fb4d
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -550,7 +477,7 @@ MonoBehaviour:
         selectedIndex: -1
         scroll: {x: 0, y: 0}
       - itemId: 82801685
-        selectedIndex: 2
+        selectedIndex: 0
         scroll: {x: 0, y: 0}
       - itemId: -298396491
         selectedIndex: -1
@@ -624,7 +551,7 @@ MonoBehaviour:
       \"isComposite\": false,\n                    \"isPartOfComposite\": false\n               
       },\n                {\n                    \"name\": \"\",\n                   
       \"id\": \"abf957d2-12bd-4a32-9f89-7c1f8bf5d433\",\n                    \"path\":
-      \"<Mouse>/leftButton\",\n                    \"interactions\": \"\",\n                   
+      \"<Keyboard>/e\",\n                    \"interactions\": \"\",\n                   
       \"processors\": \"\",\n                    \"groups\": \"\",\n                   
       \"action\": \"Propulsion\",\n                    \"isComposite\": false,\n                   
       \"isPartOfComposite\": false\n                }\n            ]\n        }\n   
@@ -644,7 +571,7 @@ MonoBehaviour:
     m_Text: PlayerControls (Input Actions)
     m_Image: {fileID: 0}
     m_Tooltip: 
---- !u!114 &19
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -665,520 +592,75 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 709
+    y: 635
     width: 1158
-    height: 120
+    height: 194
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  logPanelScroll: {x: 0, y: 11.243244}
+  logPanelScroll: {x: 0, y: -84}
   logPanelSelectedIndex: -1
   logPanelAutoScroll: 1
-  currentFrame: 129673
+  currentFrame: 261116
   logs:
-    lastGrabbedIndex: 1
-    lastGrabbedCount: 2
+    lastGrabbedIndex: 0
+    lastGrabbedCount: 1
     proEntries:
-    - logType: 4
+    - logType: 1
       ignore: 0
       processed: 1
       tempFilterProcessed: 1
       remoteEndPoint: Local
       logPanelVisible: 1
       logPanelIndex: 0
-      logOutputHeight: -1
+      logOutputHeight: 27
       listIndex: 0
       nativeIndex: 0
       nativeIdentifier: 0
-      originalLog: 'NullReferenceException: Object reference not set to an instance
-        of an object'
-      originalStackTrace: 'NullReferenceException: Object reference not set to an
-        instance of an object
+      originalLog: '[Adaptive Performance] No Provider was configured for use. Make
+        sure you added at least one Provider in the Adaptive Performance Settings.'
+      originalStackTrace: '[Adaptive Performance] No Provider was configured for
+        use. Make sure you added at least one Provider in the Adaptive Performance
+        Settings.
 
-        UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect
-        onGUIPosition) (at <36f62d8e760b48f7af5d32916f997ce1>:0)
-
-        UnityEditor.DockArea.DrawView
-        (UnityEngine.Rect dockAreaRect) (at <36f62d8e760b48f7af5d32916f997ce1>:0)
-
-        UnityEditor.DockArea.OldOnGUI
-        () (at <36f62d8e760b48f7af5d32916f997ce1>:0)
-
-        UnityEngine.UIElements.IMGUIContainer.DoOnGUI
-        (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect
-        clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize,
-        System.Action onGUIHandler, System.Boolean canAffectFocus) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.GUIUtility:ProcessEvent(Int32,
-        IntPtr, Boolean&)
+        UnityEngine.AdaptivePerformance.AdaptivePerformanceInitializer:Initialize
+        () (at Library/PackageCache/com.unity.adaptiveperformance@3.0.2/Runtime/Core/AdaptivePerformanceInit.cs:60)
 
 '
-      nativeFileName: 
+      nativeFileName: Library/PackageCache/com.unity.adaptiveperformance@3.0.2/Runtime/Core/AdaptiverPerformanceLog.cs
       nativeFileNamePretty: 
-      nativeLineNumber: 0
+      nativeLineNumber: 11
       watchName: 
-      logText: 'NullReferenceException: Object reference not set to an instance of
-        an object'
-      logTruncatedText: 'NullReferenceException: Object reference not set to an instance
-        of an object'
-      logColumnText: 'NullReferenceException: Object reference not set to an instance
-        of an object'
+      logText: '[Adaptive Performance] No Provider was configured for use. Make sure
+        you added at least one Provider in the Adaptive Performance Settings.'
+      logTruncatedText: '[Adaptive Performance] No Provider was configured for use.
+        Make sure you added at least one Provider in the Adaptive Performance Settings.'
+      logColumnText: '[Adaptive Performance] No Provider was configured for use.
+        Make sure you added at least one Provider in the Adaptive Performance Settings.'
       fileName: 
       className: 
       namespaceName: 
       lineCount: 1
       hasSourceCode: 0
-      timeStamp: 18:21:29
-      timeFrame: -1
-      timeStampDateTimeNow: 
+      timeStamp: 12:15:20.521
+      timeFrame: 3
+      timeStampDateTimeNow: 12:15:20.521
       instanceID: 0
       collapsedCount: 1
       cachedHeight: 19
       cachedHeightLogWidth: 1114
-      stackEntries:
-      - fileName: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssets: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssetsPlusLineNumber: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutPath: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNameWithoutPathPlusLineNumber: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNamePretty: _36f62d8e760b48f7af5d32916f997ce1_
-        instanceID: -1
-        className: HostView
-        methodName: InvokeOnGUI
-        namespaceName: UnityEditor
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: HostView.InvokeOnGUI()
-        stackLabel2: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-      - fileName: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssets: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssetsPlusLineNumber: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutPath: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNameWithoutPathPlusLineNumber: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNamePretty: _36f62d8e760b48f7af5d32916f997ce1_
-        instanceID: -1
-        className: DockArea
-        methodName: DrawView
-        namespaceName: UnityEditor
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: DockArea.DrawView()
-        stackLabel2: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-      - fileName: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssets: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssetsPlusLineNumber: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutPath: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNameWithoutPathPlusLineNumber: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNamePretty: _36f62d8e760b48f7af5d32916f997ce1_
-        instanceID: -1
-        className: DockArea
-        methodName: OldOnGUI
-        namespaceName: UnityEditor
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: DockArea.OldOnGUI()
-        stackLabel2: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: IMGUIContainer
-        methodName: DoOnGUI
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: IMGUIContainer.DoOnGUI()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-      - fileName: None
-        fileNameWithoutAssets: None
-        fileNameWithoutAssetsPlusLineNumber: None
-        fileNameWithoutPath: None
-        fileNameWithoutPathPlusLineNumber: None
-        fileNamePretty: None
-        instanceID: -1
-        className: GUIUtility
-        methodName: ProcessEvent
-        namespaceName: UnityEngine
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: GUIUtility.ProcessEvent()
-        stackLabel2: 
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
+      stackEntries: []
       ignoredStackEntries: []
       lastMatchedCount: 1
       belongsToFilters:
-      - name: Exception
+      - name: Log
         isEnabled: 1
         collapsed: 1
-        itemGUID: 92d81465-e459-47fc-a557-b23610efb92a
-        filterName: 
-        mainColor: {r: 0.616, g: 0, b: 1, a: 0.7}
-        isStandardFilter: 1
-        isTempFilter: 0
-        filterOnly: 0
-        useAdvancedColors: 1
-        customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 0.616, g: 0, b: 1, a: 0.7}
-        swallowStandard: 1
-        standardCanSwallow: 0
-        overrideStandardColors: 1
-        overrideStandardIcon: 1
-        collapseIconBackground: 0
-        collapseIconSymbol: 0
-        collapseIconLetter: 0
-        collapseIconTexture: 0
-        useIconBackground: 1
-        useIconSymbol: 0
-        useIconLetter: 1
-        useIconTexture: 0
-        filterFormatVersion: 1
-        iconColorize: 0
-        useAndOpForSearchList: 0
-        searchList:
-          list:
-          - name: 
-            isEnabled: 1
-            collapsed: 0
-            itemGUID: f73634ed-493f-4a97-8e5e-95e0a6693ce1
-            searchString: <Any>
-            searchType: 1
-            removeSearchStringFromLog: 0
-            logTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: bfccf53b-61ce-40ab-979c-fc3dde6298fb
-                logType: 4
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 3ef9a07f-98d6-44b9-ba02-c6471e4af98b
-                logType: 7
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            columnTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: e575f241-8d42-498a-ae77-d716a7493397
-                columnType: 1
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            sourceCodeList:
-              list: []
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-          selectionList: 0
-          collapsable: 1
-          collapsed: 0
-        iconLetter:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 3
-          iconType2: 1
-          iconText: X
-          useIconTextFirstLetter: 0
-          useIconLogColor: 0
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 7
-        iconSymbol:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconBackground:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconTexture:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        showInToolbar: 1
-        hideLabelInToolbar: 0
-        hideWhenNoMatches: 1
-      belongsToStandardFilters:
-      - name: Exception
-        isEnabled: 1
-        collapsed: 1
-        itemGUID: 92d81465-e459-47fc-a557-b23610efb92a
-        filterName: 
-        mainColor: {r: 0.616, g: 0, b: 1, a: 0.7}
-        isStandardFilter: 1
-        isTempFilter: 0
-        filterOnly: 0
-        useAdvancedColors: 1
-        customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 0.616, g: 0, b: 1, a: 0.7}
-        swallowStandard: 1
-        standardCanSwallow: 0
-        overrideStandardColors: 1
-        overrideStandardIcon: 1
-        collapseIconBackground: 0
-        collapseIconSymbol: 0
-        collapseIconLetter: 0
-        collapseIconTexture: 0
-        useIconBackground: 1
-        useIconSymbol: 0
-        useIconLetter: 1
-        useIconTexture: 0
-        filterFormatVersion: 1
-        iconColorize: 0
-        useAndOpForSearchList: 0
-        searchList:
-          list:
-          - name: 
-            isEnabled: 1
-            collapsed: 0
-            itemGUID: f73634ed-493f-4a97-8e5e-95e0a6693ce1
-            searchString: <Any>
-            searchType: 1
-            removeSearchStringFromLog: 0
-            logTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: bfccf53b-61ce-40ab-979c-fc3dde6298fb
-                logType: 4
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 3ef9a07f-98d6-44b9-ba02-c6471e4af98b
-                logType: 7
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            columnTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: e575f241-8d42-498a-ae77-d716a7493397
-                columnType: 1
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            sourceCodeList:
-              list: []
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-          selectionList: 0
-          collapsable: 1
-          collapsed: 0
-        iconLetter:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 3
-          iconType2: 1
-          iconText: X
-          useIconTextFirstLetter: 0
-          useIconLogColor: 0
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 7
-        iconSymbol:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconBackground:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconTexture:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        showInToolbar: 1
-        hideLabelInToolbar: 0
-        hideWhenNoMatches: 1
-      assignedTempFilter:
-        name: 
-        isEnabled: 1
-        collapsed: 0
-        itemGUID: 
+        itemGUID: 3f91bd43-796a-41cb-8075-7e43d38f3f25
         filterName: 
         mainColor: {r: 1, g: 1, b: 1, a: 1}
-        isStandardFilter: 0
+        isStandardFilter: 1
         isTempFilter: 0
         filterOnly: 0
         useAdvancedColors: 0
@@ -1196,11 +678,43 @@ MonoBehaviour:
         useIconSymbol: 0
         useIconLetter: 0
         useIconTexture: 0
-        filterFormatVersion: -1
+        filterFormatVersion: 1
         iconColorize: 0
         useAndOpForSearchList: 0
         searchList:
-          list: []
+          list:
+          - name: 
+            isEnabled: 1
+            collapsed: 0
+            itemGUID: b50d24a6-8e59-4bfd-8bf1-7840be0c1a14
+            searchString: <Any>
+            searchType: 1
+            removeSearchStringFromLog: 0
+            logTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: d521c657-bb24-4690-8853-270a133d16fe
+                logType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+            columnTypeList:
+              list:
+              - name: 
+                isEnabled: 1
+                collapsed: 0
+                itemGUID: a1c305a7-9482-45a5-8105-a79bb6599bc5
+                columnType: 1
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
+            sourceCodeList:
+              list: []
+              selectionList: 0
+              collapsable: 1
+              collapsed: 0
           selectionList: 0
           collapsable: 1
           collapsed: 0
@@ -1249,7 +763,7 @@ MonoBehaviour:
           useIconTextFirstLetter: 1
           useIconLogColor: 1
           iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconBuiltInID: BACKGROUNDS_ECPLOGICON
           iconTextureGUID: 
           useIconShadow: 1
           iconOffset: {x: 0, y: 0}
@@ -1275,781 +789,19 @@ MonoBehaviour:
         showInToolbar: 1
         hideLabelInToolbar: 0
         hideWhenNoMatches: 0
-    - logType: 4
-      ignore: 0
-      processed: 1
-      tempFilterProcessed: 1
-      remoteEndPoint: Local
-      logPanelVisible: 1
-      logPanelIndex: 1
-      logOutputHeight: 42
-      listIndex: 1
-      nativeIndex: 1
-      nativeIdentifier: 0
-      originalLog: 'NullReferenceException: Object reference not set to an instance
-        of an object
-
-        Rethrow as ImmediateModeException'
-      originalStackTrace: 'NullReferenceException: Object reference not set to an
-        instance of an object
-
-        UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect
-        onGUIPosition) (at <36f62d8e760b48f7af5d32916f997ce1>:0)
-
-        UnityEditor.DockArea.DrawView
-        (UnityEngine.Rect dockAreaRect) (at <36f62d8e760b48f7af5d32916f997ce1>:0)
-
-        UnityEditor.DockArea.OldOnGUI
-        () (at <36f62d8e760b48f7af5d32916f997ce1>:0)
-
-        UnityEngine.UIElements.IMGUIContainer.DoOnGUI
-        (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect
-        clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize,
-        System.Action onGUIHandler, System.Boolean canAffectFocus) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent
-        (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect
-        clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus)
-        (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint
-        () (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh
-        (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint,
-        System.Exception& immediateException) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        Rethrow
-        as ImmediateModeException
-
-        UnityEngine.UIElements.UIR.RenderChain.Render
-        () (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.UIRRepaintUpdater.Update
-        () (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase
-        (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.Panel.UpdateForRepaint
-        () (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.Panel.Repaint
-        (UnityEngine.Event e) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.UIElementsUtility.DoDispatch
-        (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent
-        (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled)
-        (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.UIEventRegistration.ProcessEvent
-        (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2
-        (System.Int32 i, System.IntPtr ptr) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.GUIUtility.ProcessEvent
-        (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result)
-        (at <69bcbb1dde7d49b2aed63b1879b25dc3>:0)
-
-'
-      nativeFileName: 
-      nativeFileNamePretty: 
-      nativeLineNumber: 0
-      watchName: 
-      logText: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        Rethrow as ImmediateModeException'
-      logTruncatedText: 'NullReferenceException: Object reference not set to an instance
-        of an object
-
-        Rethrow as ImmediateModeException'
-      logColumnText: 'NullReferenceException: Object reference not set to an instance
-        of an object
-
-        Rethrow as ImmediateModeException'
-      fileName: 
-      className: 
-      namespaceName: 
-      lineCount: 2
-      hasSourceCode: 1
-      timeStamp: 18:21:29
-      timeFrame: -1
-      timeStampDateTimeNow: 
-      instanceID: -7496
-      collapsedCount: 1
-      cachedHeight: 34
-      cachedHeightLogWidth: 1114
-      stackEntries:
-      - fileName: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssets: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssetsPlusLineNumber: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutPath: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNameWithoutPathPlusLineNumber: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNamePretty: _36f62d8e760b48f7af5d32916f997ce1_
-        instanceID: -1
-        className: HostView
-        methodName: InvokeOnGUI
-        namespaceName: UnityEditor
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: HostView.InvokeOnGUI()
-        stackLabel2: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-        stackLabel1Content:
-          m_Text: HostView.InvokeOnGUI()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 145
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 276
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssets: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssetsPlusLineNumber: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutPath: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNameWithoutPathPlusLineNumber: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNamePretty: _36f62d8e760b48f7af5d32916f997ce1_
-        instanceID: -1
-        className: DockArea
-        methodName: DrawView
-        namespaceName: UnityEditor
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: DockArea.DrawView()
-        stackLabel2: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-        stackLabel1Content:
-          m_Text: DockArea.DrawView()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 131
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 276
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssets: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssetsPlusLineNumber: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutPath: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNameWithoutPathPlusLineNumber: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNamePretty: _36f62d8e760b48f7af5d32916f997ce1_
-        instanceID: -1
-        className: DockArea
-        methodName: OldOnGUI
-        namespaceName: UnityEditor
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: DockArea.OldOnGUI()
-        stackLabel2: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-        stackLabel1Content:
-          m_Text: DockArea.OldOnGUI()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 128
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 276
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: IMGUIContainer
-        methodName: DoOnGUI
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: IMGUIContainer.DoOnGUI()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: IMGUIContainer.DoOnGUI()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 158
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: IMGUIContainer
-        methodName: HandleIMGUIEvent
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: IMGUIContainer.HandleIMGUIEvent()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: IMGUIContainer.HandleIMGUIEvent()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 214
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: IMGUIContainer
-        methodName: DoIMGUIRepaint
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: IMGUIContainer.DoIMGUIRepaint()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: IMGUIContainer.DoIMGUIRepaint()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 201
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: RenderChainCommand
-        methodName: ExecuteNonDrawMesh
-        namespaceName: UnityEngine.UIElements.UIR
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: RenderChainCommand.ExecuteNonDrawMesh()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: RenderChainCommand.ExecuteNonDrawMesh()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 281
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: RenderChain
-        methodName: Render
-        namespaceName: UnityEngine.UIElements.UIR
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: RenderChain.Render()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: RenderChain.Render()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 130
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: UIRRepaintUpdater
-        methodName: Update
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: UIRRepaintUpdater.Update()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: UIRRepaintUpdater.Update()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 171
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: VisualTreeUpdater
-        methodName: UpdateVisualTreePhase
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: VisualTreeUpdater.UpdateVisualTreePhase()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: VisualTreeUpdater.UpdateVisualTreePhase()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 268
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: Panel
-        methodName: UpdateForRepaint
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: Panel.UpdateForRepaint()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: Panel.UpdateForRepaint()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 153
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: Panel
-        methodName: Repaint
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: Panel.Repaint()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: Panel.Repaint()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 90
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: UIElementsUtility
-        methodName: DoDispatch
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: UIElementsUtility.DoDispatch()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: UIElementsUtility.DoDispatch()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 183
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility
-        methodName: ProcessEvent
-        namespaceName: None
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 586
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: UIEventRegistration
-        methodName: ProcessEvent
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: UIEventRegistration.ProcessEvent()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: UIEventRegistration.ProcessEvent()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 211
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: UIEventRegistration+<>c
-        methodName: <.cctor>b__1_2
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: UIEventRegistration+<>c.<.cctor>b__1_2()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: UIEventRegistration+<>c.<.cctor>b__1_2()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 250
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <69bcbb1dde7d49b2aed63b1879b25dc3>
-        fileNameWithoutAssets: <69bcbb1dde7d49b2aed63b1879b25dc3>
-        fileNameWithoutAssetsPlusLineNumber: <69bcbb1dde7d49b2aed63b1879b25dc3>
-        fileNameWithoutPath: _69bcbb1dde7d49b2aed63b1879b25dc3_
-        fileNameWithoutPathPlusLineNumber: _69bcbb1dde7d49b2aed63b1879b25dc3_
-        fileNamePretty: _69bcbb1dde7d49b2aed63b1879b25dc3_
-        instanceID: -1
-        className: GUIUtility
-        methodName: ProcessEvent
-        namespaceName: UnityEngine
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: GUIUtility.ProcessEvent()
-        stackLabel2: ' at <69bcbb1dde7d49b2aed63b1879b25dc3>:0'
-        stackLabel1Content:
-          m_Text: GUIUtility.ProcessEvent()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 150
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <69bcbb1dde7d49b2aed63b1879b25dc3>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      ignoredStackEntries: []
-      lastMatchedCount: 1
-      belongsToFilters:
-      - name: Exception
-        isEnabled: 1
-        collapsed: 1
-        itemGUID: 92d81465-e459-47fc-a557-b23610efb92a
-        filterName: 
-        mainColor: {r: 0.616, g: 0, b: 1, a: 0.7}
-        isStandardFilter: 1
-        isTempFilter: 0
-        filterOnly: 0
-        useAdvancedColors: 1
-        customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 0.616, g: 0, b: 1, a: 0.7}
-        swallowStandard: 1
-        standardCanSwallow: 0
-        overrideStandardColors: 1
-        overrideStandardIcon: 1
-        collapseIconBackground: 0
-        collapseIconSymbol: 0
-        collapseIconLetter: 0
-        collapseIconTexture: 0
-        useIconBackground: 1
-        useIconSymbol: 0
-        useIconLetter: 1
-        useIconTexture: 0
-        filterFormatVersion: 1
-        iconColorize: 0
-        useAndOpForSearchList: 0
-        searchList:
-          list:
-          - name: 
-            isEnabled: 1
-            collapsed: 0
-            itemGUID: f73634ed-493f-4a97-8e5e-95e0a6693ce1
-            searchString: <Any>
-            searchType: 1
-            removeSearchStringFromLog: 0
-            logTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: bfccf53b-61ce-40ab-979c-fc3dde6298fb
-                logType: 4
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 3ef9a07f-98d6-44b9-ba02-c6471e4af98b
-                logType: 7
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            columnTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: e575f241-8d42-498a-ae77-d716a7493397
-                columnType: 1
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            sourceCodeList:
-              list: []
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-          selectionList: 0
-          collapsable: 1
-          collapsed: 0
-        iconLetter:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 3
-          iconType2: 1
-          iconText: X
-          useIconTextFirstLetter: 0
-          useIconLogColor: 0
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 7
-        iconSymbol:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconBackground:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconTexture:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        showInToolbar: 1
-        hideLabelInToolbar: 0
-        hideWhenNoMatches: 1
       belongsToStandardFilters:
-      - name: Exception
+      - name: Log
         isEnabled: 1
         collapsed: 1
-        itemGUID: 92d81465-e459-47fc-a557-b23610efb92a
+        itemGUID: 3f91bd43-796a-41cb-8075-7e43d38f3f25
         filterName: 
-        mainColor: {r: 0.616, g: 0, b: 1, a: 0.7}
+        mainColor: {r: 1, g: 1, b: 1, a: 1}
         isStandardFilter: 1
         isTempFilter: 0
         filterOnly: 0
-        useAdvancedColors: 1
+        useAdvancedColors: 0
         customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 0.616, g: 0, b: 1, a: 0.7}
+        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
         swallowStandard: 1
         standardCanSwallow: 0
         overrideStandardColors: 1
@@ -2060,7 +812,7 @@ MonoBehaviour:
         collapseIconTexture: 0
         useIconBackground: 1
         useIconSymbol: 0
-        useIconLetter: 1
+        useIconLetter: 0
         useIconTexture: 0
         filterFormatVersion: 1
         iconColorize: 0
@@ -2070,7 +822,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: f73634ed-493f-4a97-8e5e-95e0a6693ce1
+            itemGUID: b50d24a6-8e59-4bfd-8bf1-7840be0c1a14
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -2079,13 +831,8 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: bfccf53b-61ce-40ab-979c-fc3dde6298fb
-                logType: 4
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 3ef9a07f-98d6-44b9-ba02-c6471e4af98b
-                logType: 7
+                itemGUID: d521c657-bb24-4690-8853-270a133d16fe
+                logType: 1
               selectionList: 0
               collapsable: 1
               collapsed: 0
@@ -2094,7 +841,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: e575f241-8d42-498a-ae77-d716a7493397
+                itemGUID: a1c305a7-9482-45a5-8105-a79bb6599bc5
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -2112,18 +859,18 @@ MonoBehaviour:
           isEnabled: 1
           collapsed: 0
           itemGUID: 
-          iconType: 3
+          iconType: 1
           iconType2: 1
-          iconText: X
-          useIconTextFirstLetter: 0
-          useIconLogColor: 0
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
           iconColor: {r: 1, g: 1, b: 1, a: 1}
           iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
           iconTextureGUID: 
           useIconShadow: 1
           iconOffset: {x: 0, y: 0}
           iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 7
+          iconSize: 13
         iconSymbol:
           name: 
           isEnabled: 1
@@ -2152,7 +899,7 @@ MonoBehaviour:
           useIconTextFirstLetter: 1
           useIconLogColor: 1
           iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconBuiltInID: BACKGROUNDS_ECPLOGICON
           iconTextureGUID: 
           useIconShadow: 1
           iconOffset: {x: 0, y: 0}
@@ -2177,7 +924,7 @@ MonoBehaviour:
           iconSize: 13
         showInToolbar: 1
         hideLabelInToolbar: 0
-        hideWhenNoMatches: 1
+        hideWhenNoMatches: 0
       assignedTempFilter:
         name: 
         isEnabled: 1
@@ -2287,228 +1034,65 @@ MonoBehaviour:
     compilerErrorEntries: []
     timeFrames: 
     _filteredEntries:
-    - logType: 4
+    - logType: 1
       ignore: 0
       processed: 1
       tempFilterProcessed: 1
       remoteEndPoint: Local
       logPanelVisible: 1
       logPanelIndex: 0
-      logOutputHeight: -1
+      logOutputHeight: 27
       listIndex: 0
       nativeIndex: 0
       nativeIdentifier: 0
-      originalLog: 'NullReferenceException: Object reference not set to an instance
-        of an object'
-      originalStackTrace: 'NullReferenceException: Object reference not set to an
-        instance of an object
+      originalLog: '[Adaptive Performance] No Provider was configured for use. Make
+        sure you added at least one Provider in the Adaptive Performance Settings.'
+      originalStackTrace: '[Adaptive Performance] No Provider was configured for
+        use. Make sure you added at least one Provider in the Adaptive Performance
+        Settings.
 
-        UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect
-        onGUIPosition) (at <36f62d8e760b48f7af5d32916f997ce1>:0)
-
-        UnityEditor.DockArea.DrawView
-        (UnityEngine.Rect dockAreaRect) (at <36f62d8e760b48f7af5d32916f997ce1>:0)
-
-        UnityEditor.DockArea.OldOnGUI
-        () (at <36f62d8e760b48f7af5d32916f997ce1>:0)
-
-        UnityEngine.UIElements.IMGUIContainer.DoOnGUI
-        (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect
-        clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize,
-        System.Action onGUIHandler, System.Boolean canAffectFocus) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.GUIUtility:ProcessEvent(Int32,
-        IntPtr, Boolean&)
+        UnityEngine.AdaptivePerformance.AdaptivePerformanceInitializer:Initialize
+        () (at Library/PackageCache/com.unity.adaptiveperformance@3.0.2/Runtime/Core/AdaptivePerformanceInit.cs:60)
 
 '
-      nativeFileName: 
+      nativeFileName: Library/PackageCache/com.unity.adaptiveperformance@3.0.2/Runtime/Core/AdaptiverPerformanceLog.cs
       nativeFileNamePretty: 
-      nativeLineNumber: 0
+      nativeLineNumber: 11
       watchName: 
-      logText: 'NullReferenceException: Object reference not set to an instance of
-        an object'
-      logTruncatedText: 'NullReferenceException: Object reference not set to an instance
-        of an object'
-      logColumnText: 'NullReferenceException: Object reference not set to an instance
-        of an object'
+      logText: '[Adaptive Performance] No Provider was configured for use. Make sure
+        you added at least one Provider in the Adaptive Performance Settings.'
+      logTruncatedText: '[Adaptive Performance] No Provider was configured for use.
+        Make sure you added at least one Provider in the Adaptive Performance Settings.'
+      logColumnText: '[Adaptive Performance] No Provider was configured for use.
+        Make sure you added at least one Provider in the Adaptive Performance Settings.'
       fileName: 
       className: 
       namespaceName: 
       lineCount: 1
       hasSourceCode: 0
-      timeStamp: 18:21:29
-      timeFrame: -1
-      timeStampDateTimeNow: 
+      timeStamp: 12:15:20.521
+      timeFrame: 3
+      timeStampDateTimeNow: 12:15:20.521
       instanceID: 0
       collapsedCount: 1
       cachedHeight: 19
       cachedHeightLogWidth: 1114
-      stackEntries:
-      - fileName: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssets: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssetsPlusLineNumber: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutPath: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNameWithoutPathPlusLineNumber: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNamePretty: _36f62d8e760b48f7af5d32916f997ce1_
-        instanceID: -1
-        className: HostView
-        methodName: InvokeOnGUI
-        namespaceName: UnityEditor
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: HostView.InvokeOnGUI()
-        stackLabel2: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-      - fileName: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssets: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssetsPlusLineNumber: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutPath: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNameWithoutPathPlusLineNumber: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNamePretty: _36f62d8e760b48f7af5d32916f997ce1_
-        instanceID: -1
-        className: DockArea
-        methodName: DrawView
-        namespaceName: UnityEditor
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: DockArea.DrawView()
-        stackLabel2: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-      - fileName: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssets: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssetsPlusLineNumber: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutPath: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNameWithoutPathPlusLineNumber: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNamePretty: _36f62d8e760b48f7af5d32916f997ce1_
-        instanceID: -1
-        className: DockArea
-        methodName: OldOnGUI
-        namespaceName: UnityEditor
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: DockArea.OldOnGUI()
-        stackLabel2: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: IMGUIContainer
-        methodName: DoOnGUI
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: IMGUIContainer.DoOnGUI()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
-      - fileName: None
-        fileNameWithoutAssets: None
-        fileNameWithoutAssetsPlusLineNumber: None
-        fileNameWithoutPath: None
-        fileNameWithoutPathPlusLineNumber: None
-        fileNamePretty: None
-        instanceID: -1
-        className: GUIUtility
-        methodName: ProcessEvent
-        namespaceName: UnityEngine
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: GUIUtility.ProcessEvent()
-        stackLabel2: 
-        stackLabel1Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 0
-        stackLabel1Height: 0
-        stackLabel2Content:
-          m_Text: 
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 0
-        stackLabel2Height: 0
-        stackSourceLineHeight: 0
-        sourceCode: []
-        sourceCodeUpdated: 0
-        showSource: 1
+      stackEntries: []
       ignoredStackEntries: []
       lastMatchedCount: 1
       belongsToFilters:
-      - name: Exception
+      - name: Log
         isEnabled: 1
         collapsed: 1
-        itemGUID: 92d81465-e459-47fc-a557-b23610efb92a
+        itemGUID: 3f91bd43-796a-41cb-8075-7e43d38f3f25
         filterName: 
-        mainColor: {r: 0.616, g: 0, b: 1, a: 0.7}
+        mainColor: {r: 1, g: 1, b: 1, a: 1}
         isStandardFilter: 1
         isTempFilter: 0
         filterOnly: 0
-        useAdvancedColors: 1
+        useAdvancedColors: 0
         customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 0.616, g: 0, b: 1, a: 0.7}
+        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
         swallowStandard: 1
         standardCanSwallow: 0
         overrideStandardColors: 1
@@ -2519,7 +1103,7 @@ MonoBehaviour:
         collapseIconTexture: 0
         useIconBackground: 1
         useIconSymbol: 0
-        useIconLetter: 1
+        useIconLetter: 0
         useIconTexture: 0
         filterFormatVersion: 1
         iconColorize: 0
@@ -2529,7 +1113,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: f73634ed-493f-4a97-8e5e-95e0a6693ce1
+            itemGUID: b50d24a6-8e59-4bfd-8bf1-7840be0c1a14
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -2538,13 +1122,8 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: bfccf53b-61ce-40ab-979c-fc3dde6298fb
-                logType: 4
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 3ef9a07f-98d6-44b9-ba02-c6471e4af98b
-                logType: 7
+                itemGUID: d521c657-bb24-4690-8853-270a133d16fe
+                logType: 1
               selectionList: 0
               collapsable: 1
               collapsed: 0
@@ -2553,7 +1132,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: e575f241-8d42-498a-ae77-d716a7493397
+                itemGUID: a1c305a7-9482-45a5-8105-a79bb6599bc5
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -2571,18 +1150,18 @@ MonoBehaviour:
           isEnabled: 1
           collapsed: 0
           itemGUID: 
-          iconType: 3
+          iconType: 1
           iconType2: 1
-          iconText: X
-          useIconTextFirstLetter: 0
-          useIconLogColor: 0
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
           iconColor: {r: 1, g: 1, b: 1, a: 1}
           iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
           iconTextureGUID: 
           useIconShadow: 1
           iconOffset: {x: 0, y: 0}
           iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 7
+          iconSize: 13
         iconSymbol:
           name: 
           isEnabled: 1
@@ -2611,7 +1190,7 @@ MonoBehaviour:
           useIconTextFirstLetter: 1
           useIconLogColor: 1
           iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconBuiltInID: BACKGROUNDS_ECPLOGICON
           iconTextureGUID: 
           useIconShadow: 1
           iconOffset: {x: 0, y: 0}
@@ -2636,20 +1215,20 @@ MonoBehaviour:
           iconSize: 13
         showInToolbar: 1
         hideLabelInToolbar: 0
-        hideWhenNoMatches: 1
+        hideWhenNoMatches: 0
       belongsToStandardFilters:
-      - name: Exception
+      - name: Log
         isEnabled: 1
         collapsed: 1
-        itemGUID: 92d81465-e459-47fc-a557-b23610efb92a
+        itemGUID: 3f91bd43-796a-41cb-8075-7e43d38f3f25
         filterName: 
-        mainColor: {r: 0.616, g: 0, b: 1, a: 0.7}
+        mainColor: {r: 1, g: 1, b: 1, a: 1}
         isStandardFilter: 1
         isTempFilter: 0
         filterOnly: 0
-        useAdvancedColors: 1
+        useAdvancedColors: 0
         customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 0.616, g: 0, b: 1, a: 0.7}
+        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
         swallowStandard: 1
         standardCanSwallow: 0
         overrideStandardColors: 1
@@ -2660,7 +1239,7 @@ MonoBehaviour:
         collapseIconTexture: 0
         useIconBackground: 1
         useIconSymbol: 0
-        useIconLetter: 1
+        useIconLetter: 0
         useIconTexture: 0
         filterFormatVersion: 1
         iconColorize: 0
@@ -2670,7 +1249,7 @@ MonoBehaviour:
           - name: 
             isEnabled: 1
             collapsed: 0
-            itemGUID: f73634ed-493f-4a97-8e5e-95e0a6693ce1
+            itemGUID: b50d24a6-8e59-4bfd-8bf1-7840be0c1a14
             searchString: <Any>
             searchType: 1
             removeSearchStringFromLog: 0
@@ -2679,13 +1258,8 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: bfccf53b-61ce-40ab-979c-fc3dde6298fb
-                logType: 4
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 3ef9a07f-98d6-44b9-ba02-c6471e4af98b
-                logType: 7
+                itemGUID: d521c657-bb24-4690-8853-270a133d16fe
+                logType: 1
               selectionList: 0
               collapsable: 1
               collapsed: 0
@@ -2694,7 +1268,7 @@ MonoBehaviour:
               - name: 
                 isEnabled: 1
                 collapsed: 0
-                itemGUID: e575f241-8d42-498a-ae77-d716a7493397
+                itemGUID: a1c305a7-9482-45a5-8105-a79bb6599bc5
                 columnType: 1
               selectionList: 0
               collapsable: 1
@@ -2712,18 +1286,18 @@ MonoBehaviour:
           isEnabled: 1
           collapsed: 0
           itemGUID: 
-          iconType: 3
+          iconType: 1
           iconType2: 1
-          iconText: X
-          useIconTextFirstLetter: 0
-          useIconLogColor: 0
+          iconText: A
+          useIconTextFirstLetter: 1
+          useIconLogColor: 1
           iconColor: {r: 1, g: 1, b: 1, a: 1}
           iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
           iconTextureGUID: 
           useIconShadow: 1
           iconOffset: {x: 0, y: 0}
           iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 7
+          iconSize: 13
         iconSymbol:
           name: 
           isEnabled: 1
@@ -2752,7 +1326,7 @@ MonoBehaviour:
           useIconTextFirstLetter: 1
           useIconLogColor: 1
           iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
+          iconBuiltInID: BACKGROUNDS_ECPLOGICON
           iconTextureGUID: 
           useIconShadow: 1
           iconOffset: {x: 0, y: 0}
@@ -2777,7 +1351,7 @@ MonoBehaviour:
           iconSize: 13
         showInToolbar: 1
         hideLabelInToolbar: 0
-        hideWhenNoMatches: 1
+        hideWhenNoMatches: 0
       assignedTempFilter:
         name: 
         isEnabled: 1
@@ -2882,1014 +1456,7 @@ MonoBehaviour:
         showInToolbar: 1
         hideLabelInToolbar: 0
         hideWhenNoMatches: 0
-    - logType: 4
-      ignore: 0
-      processed: 1
-      tempFilterProcessed: 1
-      remoteEndPoint: Local
-      logPanelVisible: 1
-      logPanelIndex: 1
-      logOutputHeight: 42
-      listIndex: 1
-      nativeIndex: 1
-      nativeIdentifier: 0
-      originalLog: 'NullReferenceException: Object reference not set to an instance
-        of an object
-
-        Rethrow as ImmediateModeException'
-      originalStackTrace: 'NullReferenceException: Object reference not set to an
-        instance of an object
-
-        UnityEditor.HostView.InvokeOnGUI (UnityEngine.Rect
-        onGUIPosition) (at <36f62d8e760b48f7af5d32916f997ce1>:0)
-
-        UnityEditor.DockArea.DrawView
-        (UnityEngine.Rect dockAreaRect) (at <36f62d8e760b48f7af5d32916f997ce1>:0)
-
-        UnityEditor.DockArea.OldOnGUI
-        () (at <36f62d8e760b48f7af5d32916f997ce1>:0)
-
-        UnityEngine.UIElements.IMGUIContainer.DoOnGUI
-        (UnityEngine.Event evt, UnityEngine.Matrix4x4 parentTransform, UnityEngine.Rect
-        clippingRect, System.Boolean isComputingLayout, UnityEngine.Rect layoutSize,
-        System.Action onGUIHandler, System.Boolean canAffectFocus) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.IMGUIContainer.HandleIMGUIEvent
-        (UnityEngine.Event e, UnityEngine.Matrix4x4 worldTransform, UnityEngine.Rect
-        clippingRect, System.Action onGUIHandler, System.Boolean canAffectFocus)
-        (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.IMGUIContainer.DoIMGUIRepaint
-        () (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.UIR.RenderChainCommand.ExecuteNonDrawMesh
-        (UnityEngine.UIElements.UIR.DrawParams drawParams, System.Single pixelsPerPoint,
-        System.Exception& immediateException) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        Rethrow
-        as ImmediateModeException
-
-        UnityEngine.UIElements.UIR.RenderChain.Render
-        () (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.UIRRepaintUpdater.Update
-        () (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.VisualTreeUpdater.UpdateVisualTreePhase
-        (UnityEngine.UIElements.VisualTreeUpdatePhase phase) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.Panel.UpdateForRepaint
-        () (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.Panel.Repaint
-        (UnityEngine.Event e) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.UIElementsUtility.DoDispatch
-        (UnityEngine.UIElements.BaseVisualElementPanel panel) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent
-        (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& eventHandled)
-        (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.UIEventRegistration.ProcessEvent
-        (System.Int32 instanceID, System.IntPtr nativeEventPtr) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.UIElements.UIEventRegistration+<>c.<.cctor>b__1_2
-        (System.Int32 i, System.IntPtr ptr) (at <cd953b8fb97946ec96d4a808bc44e727>:0)
-
-        UnityEngine.GUIUtility.ProcessEvent
-        (System.Int32 instanceID, System.IntPtr nativeEventPtr, System.Boolean& result)
-        (at <69bcbb1dde7d49b2aed63b1879b25dc3>:0)
-
-'
-      nativeFileName: 
-      nativeFileNamePretty: 
-      nativeLineNumber: 0
-      watchName: 
-      logText: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        Rethrow as ImmediateModeException'
-      logTruncatedText: 'NullReferenceException: Object reference not set to an instance
-        of an object
-
-        Rethrow as ImmediateModeException'
-      logColumnText: 'NullReferenceException: Object reference not set to an instance
-        of an object
-
-        Rethrow as ImmediateModeException'
-      fileName: 
-      className: 
-      namespaceName: 
-      lineCount: 2
-      hasSourceCode: 1
-      timeStamp: 18:21:29
-      timeFrame: -1
-      timeStampDateTimeNow: 
-      instanceID: -7496
-      collapsedCount: 1
-      cachedHeight: 34
-      cachedHeightLogWidth: 1114
-      stackEntries:
-      - fileName: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssets: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssetsPlusLineNumber: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutPath: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNameWithoutPathPlusLineNumber: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNamePretty: _36f62d8e760b48f7af5d32916f997ce1_
-        instanceID: -1
-        className: HostView
-        methodName: InvokeOnGUI
-        namespaceName: UnityEditor
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: HostView.InvokeOnGUI()
-        stackLabel2: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-        stackLabel1Content:
-          m_Text: HostView.InvokeOnGUI()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 145
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 276
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssets: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssetsPlusLineNumber: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutPath: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNameWithoutPathPlusLineNumber: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNamePretty: _36f62d8e760b48f7af5d32916f997ce1_
-        instanceID: -1
-        className: DockArea
-        methodName: DrawView
-        namespaceName: UnityEditor
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: DockArea.DrawView()
-        stackLabel2: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-        stackLabel1Content:
-          m_Text: DockArea.DrawView()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 131
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 276
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssets: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutAssetsPlusLineNumber: <36f62d8e760b48f7af5d32916f997ce1>
-        fileNameWithoutPath: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNameWithoutPathPlusLineNumber: _36f62d8e760b48f7af5d32916f997ce1_
-        fileNamePretty: _36f62d8e760b48f7af5d32916f997ce1_
-        instanceID: -1
-        className: DockArea
-        methodName: OldOnGUI
-        namespaceName: UnityEditor
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: DockArea.OldOnGUI()
-        stackLabel2: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-        stackLabel1Content:
-          m_Text: DockArea.OldOnGUI()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 128
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <36f62d8e760b48f7af5d32916f997ce1>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 276
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: IMGUIContainer
-        methodName: DoOnGUI
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: IMGUIContainer.DoOnGUI()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: IMGUIContainer.DoOnGUI()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 158
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: IMGUIContainer
-        methodName: HandleIMGUIEvent
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: IMGUIContainer.HandleIMGUIEvent()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: IMGUIContainer.HandleIMGUIEvent()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 214
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: IMGUIContainer
-        methodName: DoIMGUIRepaint
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: IMGUIContainer.DoIMGUIRepaint()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: IMGUIContainer.DoIMGUIRepaint()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 201
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: RenderChainCommand
-        methodName: ExecuteNonDrawMesh
-        namespaceName: UnityEngine.UIElements.UIR
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: RenderChainCommand.ExecuteNonDrawMesh()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: RenderChainCommand.ExecuteNonDrawMesh()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 281
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: RenderChain
-        methodName: Render
-        namespaceName: UnityEngine.UIElements.UIR
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: RenderChain.Render()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: RenderChain.Render()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 130
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: UIRRepaintUpdater
-        methodName: Update
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: UIRRepaintUpdater.Update()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: UIRRepaintUpdater.Update()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 171
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: VisualTreeUpdater
-        methodName: UpdateVisualTreePhase
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: VisualTreeUpdater.UpdateVisualTreePhase()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: VisualTreeUpdater.UpdateVisualTreePhase()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 268
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: Panel
-        methodName: UpdateForRepaint
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: Panel.UpdateForRepaint()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: Panel.UpdateForRepaint()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 153
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: Panel
-        methodName: Repaint
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: Panel.Repaint()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: Panel.Repaint()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 90
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: UIElementsUtility
-        methodName: DoDispatch
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: UIElementsUtility.DoDispatch()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: UIElementsUtility.DoDispatch()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 183
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility
-        methodName: ProcessEvent
-        namespaceName: None
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: UnityEngine.UIElements.UIElementsUtility.UnityEngine.UIElements.IUIElementsUtility.ProcessEvent()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 586
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: UIEventRegistration
-        methodName: ProcessEvent
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: UIEventRegistration.ProcessEvent()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: UIEventRegistration.ProcessEvent()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 211
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssets: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutAssetsPlusLineNumber: <cd953b8fb97946ec96d4a808bc44e727>
-        fileNameWithoutPath: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNameWithoutPathPlusLineNumber: _cd953b8fb97946ec96d4a808bc44e727_
-        fileNamePretty: _cd953b8fb97946ec96d4a808bc44e727_
-        instanceID: -1
-        className: UIEventRegistration+<>c
-        methodName: <.cctor>b__1_2
-        namespaceName: UnityEngine.UIElements
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: UIEventRegistration+<>c.<.cctor>b__1_2()
-        stackLabel2: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-        stackLabel1Content:
-          m_Text: UIEventRegistration+<>c.<.cctor>b__1_2()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 250
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <cd953b8fb97946ec96d4a808bc44e727>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      - fileName: <69bcbb1dde7d49b2aed63b1879b25dc3>
-        fileNameWithoutAssets: <69bcbb1dde7d49b2aed63b1879b25dc3>
-        fileNameWithoutAssetsPlusLineNumber: <69bcbb1dde7d49b2aed63b1879b25dc3>
-        fileNameWithoutPath: _69bcbb1dde7d49b2aed63b1879b25dc3_
-        fileNameWithoutPathPlusLineNumber: _69bcbb1dde7d49b2aed63b1879b25dc3_
-        fileNamePretty: _69bcbb1dde7d49b2aed63b1879b25dc3_
-        instanceID: -1
-        className: GUIUtility
-        methodName: ProcessEvent
-        namespaceName: UnityEngine
-        lineNumberString: 0
-        charNumber: 0
-        stackLabel: GUIUtility.ProcessEvent()
-        stackLabel2: ' at <69bcbb1dde7d49b2aed63b1879b25dc3>:0'
-        stackLabel1Content:
-          m_Text: GUIUtility.ProcessEvent()
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel1Width: 150
-        stackLabel1Height: 25
-        stackLabel2Content:
-          m_Text: ' at <69bcbb1dde7d49b2aed63b1879b25dc3>:0'
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        stackLabel2Width: 288
-        stackLabel2Height: 25
-        stackSourceLineHeight: 17
-        sourceCode: []
-        sourceCodeUpdated: 1
-        showSource: 1
-      ignoredStackEntries: []
-      lastMatchedCount: 1
-      belongsToFilters:
-      - name: Exception
-        isEnabled: 1
-        collapsed: 1
-        itemGUID: 92d81465-e459-47fc-a557-b23610efb92a
-        filterName: 
-        mainColor: {r: 0.616, g: 0, b: 1, a: 0.7}
-        isStandardFilter: 1
-        isTempFilter: 0
-        filterOnly: 0
-        useAdvancedColors: 1
-        customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 0.616, g: 0, b: 1, a: 0.7}
-        swallowStandard: 1
-        standardCanSwallow: 0
-        overrideStandardColors: 1
-        overrideStandardIcon: 1
-        collapseIconBackground: 0
-        collapseIconSymbol: 0
-        collapseIconLetter: 0
-        collapseIconTexture: 0
-        useIconBackground: 1
-        useIconSymbol: 0
-        useIconLetter: 1
-        useIconTexture: 0
-        filterFormatVersion: 1
-        iconColorize: 0
-        useAndOpForSearchList: 0
-        searchList:
-          list:
-          - name: 
-            isEnabled: 1
-            collapsed: 0
-            itemGUID: f73634ed-493f-4a97-8e5e-95e0a6693ce1
-            searchString: <Any>
-            searchType: 1
-            removeSearchStringFromLog: 0
-            logTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: bfccf53b-61ce-40ab-979c-fc3dde6298fb
-                logType: 4
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 3ef9a07f-98d6-44b9-ba02-c6471e4af98b
-                logType: 7
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            columnTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: e575f241-8d42-498a-ae77-d716a7493397
-                columnType: 1
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            sourceCodeList:
-              list: []
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-          selectionList: 0
-          collapsable: 1
-          collapsed: 0
-        iconLetter:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 3
-          iconType2: 1
-          iconText: X
-          useIconTextFirstLetter: 0
-          useIconLogColor: 0
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 7
-        iconSymbol:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconBackground:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconTexture:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        showInToolbar: 1
-        hideLabelInToolbar: 0
-        hideWhenNoMatches: 1
-      belongsToStandardFilters:
-      - name: Exception
-        isEnabled: 1
-        collapsed: 1
-        itemGUID: 92d81465-e459-47fc-a557-b23610efb92a
-        filterName: 
-        mainColor: {r: 0.616, g: 0, b: 1, a: 0.7}
-        isStandardFilter: 1
-        isTempFilter: 0
-        filterOnly: 0
-        useAdvancedColors: 1
-        customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 0.616, g: 0, b: 1, a: 0.7}
-        swallowStandard: 1
-        standardCanSwallow: 0
-        overrideStandardColors: 1
-        overrideStandardIcon: 1
-        collapseIconBackground: 0
-        collapseIconSymbol: 0
-        collapseIconLetter: 0
-        collapseIconTexture: 0
-        useIconBackground: 1
-        useIconSymbol: 0
-        useIconLetter: 1
-        useIconTexture: 0
-        filterFormatVersion: 1
-        iconColorize: 0
-        useAndOpForSearchList: 0
-        searchList:
-          list:
-          - name: 
-            isEnabled: 1
-            collapsed: 0
-            itemGUID: f73634ed-493f-4a97-8e5e-95e0a6693ce1
-            searchString: <Any>
-            searchType: 1
-            removeSearchStringFromLog: 0
-            logTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: bfccf53b-61ce-40ab-979c-fc3dde6298fb
-                logType: 4
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: 3ef9a07f-98d6-44b9-ba02-c6471e4af98b
-                logType: 7
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            columnTypeList:
-              list:
-              - name: 
-                isEnabled: 1
-                collapsed: 0
-                itemGUID: e575f241-8d42-498a-ae77-d716a7493397
-                columnType: 1
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-            sourceCodeList:
-              list: []
-              selectionList: 0
-              collapsable: 1
-              collapsed: 0
-          selectionList: 0
-          collapsable: 1
-          collapsed: 0
-        iconLetter:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 3
-          iconType2: 1
-          iconText: X
-          useIconTextFirstLetter: 0
-          useIconLogColor: 0
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 7
-        iconSymbol:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconBackground:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconTexture:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        showInToolbar: 1
-        hideLabelInToolbar: 0
-        hideWhenNoMatches: 1
-      assignedTempFilter:
-        name: 
-        isEnabled: 1
-        collapsed: 0
-        itemGUID: 
-        filterName: 
-        mainColor: {r: 1, g: 1, b: 1, a: 1}
-        isStandardFilter: 0
-        isTempFilter: 0
-        filterOnly: 0
-        useAdvancedColors: 0
-        customTextColor: {r: 1, g: 1, b: 1, a: 1}
-        customBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
-        swallowStandard: 1
-        standardCanSwallow: 0
-        overrideStandardColors: 1
-        overrideStandardIcon: 1
-        collapseIconBackground: 0
-        collapseIconSymbol: 0
-        collapseIconLetter: 0
-        collapseIconTexture: 0
-        useIconBackground: 1
-        useIconSymbol: 0
-        useIconLetter: 0
-        useIconTexture: 0
-        filterFormatVersion: -1
-        iconColorize: 0
-        useAndOpForSearchList: 0
-        searchList:
-          list: []
-          selectionList: 0
-          collapsable: 1
-          collapsed: 0
-        iconLetter:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconSymbol:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconBackground:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        iconTexture:
-          name: 
-          isEnabled: 1
-          collapsed: 0
-          itemGUID: 
-          iconType: 1
-          iconType2: 1
-          iconText: A
-          useIconTextFirstLetter: 1
-          useIconLogColor: 1
-          iconColor: {r: 1, g: 1, b: 1, a: 1}
-          iconBuiltInID: BACKGROUNDS_ECPBGROUNDEDSQUARE
-          iconTextureGUID: 
-          useIconShadow: 1
-          iconOffset: {x: 0, y: 0}
-          iconShadowOffset: {x: 0.5, y: 0.5}
-          iconSize: 13
-        showInToolbar: 1
-        hideLabelInToolbar: 0
-        hideWhenNoMatches: 0
---- !u!114 &20
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3913,7 +1480,7 @@ MonoBehaviour:
     x: 871
     y: 73
     width: 286
-    height: 615
+    height: 541
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -3930,8 +1497,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Art
+    m_Folders: []
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -3946,7 +1512,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: bc5a0000
     m_LastClickedID: 23228
-    m_ExpandedIDs: 00000000f87a0000fa7a0000fc7a0000fe7a0000007b0000027b0000047b0000
+    m_ExpandedIDs: 00000000287400002a7400002c7400002e7400003074000032740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3974,7 +1540,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000f87a0000fc7a0000fe7a0000007b0000027b0000
+    m_ExpandedIDs: ffffffff00000000287400002a7400002c7400002e7400003074000032740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3990,7 +1556,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 7}
+      m_ClientGUIView: {fileID: 4}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -4030,7 +1596,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
---- !u!114 &21
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4072,7 +1638,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &22
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4093,10 +1659,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 594
+    x: 657
     y: 73
-    width: 275
-    height: 615
+    width: 212
+    height: 541
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -4106,7 +1672,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 84caffff12fbffffa8760000
+      m_ExpandedIDs: 12fbffff486f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -4122,7 +1688,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 9}
+        m_ClientGUIView: {fileID: 3}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -4130,7 +1696,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &23
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4153,8 +1719,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 267
     y: 73
-    width: 325
-    height: 615
+    width: 388
+    height: 541
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -4208,23 +1774,12 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
       index: 0
       layout: 2
-    - dockPosition: 0
-      containerId: overlay-container--right
-      floating: 0
-      collapsed: 0
-      displayed: 1
-      snapOffset: {x: 67.5, y: 86}
-      snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
-      id: Orientation
-      index: 0
-      layout: 4
     - dockPosition: 1
       containerId: overlay-container--right
       floating: 0
@@ -4241,7 +1796,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Camera
@@ -4346,6 +1901,17 @@ MonoBehaviour:
       id: Scene View/Particles
       index: 10
       layout: 4
+    - dockPosition: 0
+      containerId: overlay-toolbar__bottom
+      floating: 1
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: -111, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 1
+      id: Orientation
+      index: 0
+      layout: 4
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
   m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
@@ -4356,9 +1922,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -31.686401, y: -1.6230258, z: 13.122773}
+    m_Target: {x: 2.3367276, y: -1.1273384, z: 0.8722253}
     speed: 2
-    m_Value: {x: -31.686401, y: -1.6230258, z: 13.122773}
+    m_Value: {x: 2.3367276, y: -1.1273384, z: 0.8722253}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -4384,7 +1950,7 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     yGrid:
       m_Fade:
         m_Target: 1
@@ -4400,18 +1966,18 @@ MonoBehaviour:
         m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.02176342, y: -0.5656861, z: 0.014935361, w: 0.82420725}
+    m_Target: {x: 0.2090674, y: 0.7830816, z: -0.3468889, w: 0.47195888}
     speed: 2
-    m_Value: {x: 0.021763256, y: -0.5656819, z: 0.014935249, w: 0.82420105}
+    m_Value: {x: 0.2090671, y: 0.78308046, z: -0.3468884, w: 0.4719582}
   m_Size:
-    m_Target: 21.441845
+    m_Target: 4.2437444
     speed: 2
-    m_Value: 21.441845
+    m_Value: 4.2437444
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -4436,7 +2002,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &24
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4460,7 +2026,7 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 266
-    height: 615
+    height: 541
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -4508,22 +2074,22 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 266
-      height: 594
-    m_Scale: {x: 0.2071651, y: 0.2071651}
-    m_Translation: {x: 133, y: 297}
+      height: 520
+    m_Scale: {x: 0.18718503, y: 0.18718502}
+    m_Translation: {x: 133, y: 260}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -642
-      y: -1433.6392
-      width: 1284
-      height: 2867.2783
+      x: -710.5269
+      y: -1389
+      width: 1421.0538
+      height: 2778
     m_MinimalGUI: 1
-  m_defaultScale: 0.2071651
-  m_LastWindowPixelSize: {x: 266, y: 615}
+  m_defaultScale: 0.18718502
+  m_LastWindowPixelSize: {x: 266, y: 541}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000

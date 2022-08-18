@@ -9,6 +9,7 @@ public class ShipController : MonoBehaviour
     [SerializeField] private FloatReference shipVerticalAcceleration = default;
     [SerializeField] private FloatReference shipRotationAcceleration = default;
     private PlayerControls playerControl;
+
     private void Awake()
     {
         playerControl = new PlayerControls();
@@ -32,6 +33,7 @@ public class ShipController : MonoBehaviour
         {
             MoveAndRotate(move);
         }
+
         if (playerControl.Underwater.Light.triggered)
         {
             shipLantern.SetActive(!shipLantern.activeInHierarchy);

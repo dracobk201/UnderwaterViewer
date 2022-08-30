@@ -53,6 +53,15 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ShowCamera"",
+                    ""type"": ""Button"",
+                    ""id"": ""c9ef94fb-aa5c-4145-bb37-7a3dfa71d89a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -165,6 +174,173 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""action"": ""Propulsion"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c578fb75-daf1-43f8-9d8d-eda2b1b3ef48"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShowCamera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""533536e1-9fcc-4c88-9861-13e9042dcd14"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ShowCamera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Camera"",
+            ""id"": ""7bdc7b93-8636-498e-8665-412c72be344c"",
+            ""actions"": [
+                {
+                    ""name"": ""Rotation"",
+                    ""type"": ""Value"",
+                    ""id"": ""ea4a011a-b30c-43c9-aa43-25448f740549"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""2765c898-3370-4323-8812-4ea6a317eda2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ExitCamera"",
+                    ""type"": ""Button"",
+                    ""id"": ""ec838b77-12ec-4b12-bab4-388f76d52ac7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""6e105b5b-797c-40ee-9b3c-474a217b6679"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""272d30e4-739b-463b-812b-95403f235fbc"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotation"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""c5ebcdee-5b4d-4d5e-88d0-610a59fb64e1"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""b2ae74ea-7cae-4c5d-9299-7ef3dafde68d"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""206fa418-489a-40f1-b61b-55f72614894b"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""1a16354b-5ed5-4bc6-af5f-3d8ea02e7ae0"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""367c0354-58c0-4b9d-aa59-60f7eda84cbe"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9c484563-e730-4403-856c-abe8f66060de"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e1275f96-e0e7-4f02-9d5f-17a6cb480245"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ExitCamera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2fd07acb-9c0d-419a-b276-c532e949c81a"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ExitCamera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -176,6 +352,12 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         m_Underwater_Move = m_Underwater.FindAction("Move", throwIfNotFound: true);
         m_Underwater_Light = m_Underwater.FindAction("Light", throwIfNotFound: true);
         m_Underwater_Propulsion = m_Underwater.FindAction("Propulsion", throwIfNotFound: true);
+        m_Underwater_ShowCamera = m_Underwater.FindAction("ShowCamera", throwIfNotFound: true);
+        // Camera
+        m_Camera = asset.FindActionMap("Camera", throwIfNotFound: true);
+        m_Camera_Rotation = m_Camera.FindAction("Rotation", throwIfNotFound: true);
+        m_Camera_Shoot = m_Camera.FindAction("Shoot", throwIfNotFound: true);
+        m_Camera_ExitCamera = m_Camera.FindAction("ExitCamera", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -238,6 +420,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Underwater_Move;
     private readonly InputAction m_Underwater_Light;
     private readonly InputAction m_Underwater_Propulsion;
+    private readonly InputAction m_Underwater_ShowCamera;
     public struct UnderwaterActions
     {
         private @PlayerControls m_Wrapper;
@@ -245,6 +428,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Underwater_Move;
         public InputAction @Light => m_Wrapper.m_Underwater_Light;
         public InputAction @Propulsion => m_Wrapper.m_Underwater_Propulsion;
+        public InputAction @ShowCamera => m_Wrapper.m_Underwater_ShowCamera;
         public InputActionMap Get() { return m_Wrapper.m_Underwater; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -263,6 +447,9 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Propulsion.started -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnPropulsion;
                 @Propulsion.performed -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnPropulsion;
                 @Propulsion.canceled -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnPropulsion;
+                @ShowCamera.started -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnShowCamera;
+                @ShowCamera.performed -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnShowCamera;
+                @ShowCamera.canceled -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnShowCamera;
             }
             m_Wrapper.m_UnderwaterActionsCallbackInterface = instance;
             if (instance != null)
@@ -276,14 +463,73 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @Propulsion.started += instance.OnPropulsion;
                 @Propulsion.performed += instance.OnPropulsion;
                 @Propulsion.canceled += instance.OnPropulsion;
+                @ShowCamera.started += instance.OnShowCamera;
+                @ShowCamera.performed += instance.OnShowCamera;
+                @ShowCamera.canceled += instance.OnShowCamera;
             }
         }
     }
     public UnderwaterActions @Underwater => new UnderwaterActions(this);
+
+    // Camera
+    private readonly InputActionMap m_Camera;
+    private ICameraActions m_CameraActionsCallbackInterface;
+    private readonly InputAction m_Camera_Rotation;
+    private readonly InputAction m_Camera_Shoot;
+    private readonly InputAction m_Camera_ExitCamera;
+    public struct CameraActions
+    {
+        private @PlayerControls m_Wrapper;
+        public CameraActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Rotation => m_Wrapper.m_Camera_Rotation;
+        public InputAction @Shoot => m_Wrapper.m_Camera_Shoot;
+        public InputAction @ExitCamera => m_Wrapper.m_Camera_ExitCamera;
+        public InputActionMap Get() { return m_Wrapper.m_Camera; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(CameraActions set) { return set.Get(); }
+        public void SetCallbacks(ICameraActions instance)
+        {
+            if (m_Wrapper.m_CameraActionsCallbackInterface != null)
+            {
+                @Rotation.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnRotation;
+                @Rotation.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnRotation;
+                @Rotation.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnRotation;
+                @Shoot.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnShoot;
+                @Shoot.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnShoot;
+                @Shoot.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnShoot;
+                @ExitCamera.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnExitCamera;
+                @ExitCamera.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnExitCamera;
+                @ExitCamera.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnExitCamera;
+            }
+            m_Wrapper.m_CameraActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Rotation.started += instance.OnRotation;
+                @Rotation.performed += instance.OnRotation;
+                @Rotation.canceled += instance.OnRotation;
+                @Shoot.started += instance.OnShoot;
+                @Shoot.performed += instance.OnShoot;
+                @Shoot.canceled += instance.OnShoot;
+                @ExitCamera.started += instance.OnExitCamera;
+                @ExitCamera.performed += instance.OnExitCamera;
+                @ExitCamera.canceled += instance.OnExitCamera;
+            }
+        }
+    }
+    public CameraActions @Camera => new CameraActions(this);
     public interface IUnderwaterActions
     {
         void OnMove(InputAction.CallbackContext context);
         void OnLight(InputAction.CallbackContext context);
         void OnPropulsion(InputAction.CallbackContext context);
+        void OnShowCamera(InputAction.CallbackContext context);
+    }
+    public interface ICameraActions
+    {
+        void OnRotation(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
+        void OnExitCamera(InputAction.CallbackContext context);
     }
 }

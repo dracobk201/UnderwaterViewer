@@ -8,6 +8,9 @@ public class ShipController : MonoBehaviour
     [SerializeField] private FloatReference shipForwardAcceleration = default;
     [SerializeField] private FloatReference shipVerticalAcceleration = default;
     [SerializeField] private FloatReference shipRotationAcceleration = default;
+    [Header("Axis Configuration")]
+    [SerializeField] private BoolReference isXMovementInverted = default;
+    [SerializeField] private BoolReference isYMovementInverted = default;
     private PlayerControls playerControl;
 
     private void Awake()
@@ -53,13 +56,15 @@ public class ShipController : MonoBehaviour
 
     private void Rotate(float xValue)
     {
-        shipRigidbody.AddTorque(transform.up * shipRotationAcceleration.Value * xValue);
+        var invertedFactor = Utils.AxisCheck(isYMovementInverted.Value);
+        shipRigidbody.AddTorque(transform.up * shipRotationAcceleration.Value * xValue * invertedFactor);
     }
 
     private void Move(float yValue)
     {
         var force = Vector3.zero;
-        force.y = yValue * shipVerticalAcceleration.Value;
+        var invertedFactor = Utils.AxisCheck(isXMovementInverted.Value);
+        force.y = yValue * shipVerticalAcceleration.Value * invertedFactor;
         shipRigidbody.AddForce(force, ForceMode.Acceleration);
     }
 

@@ -7,6 +7,9 @@ public class CameraController : MonoBehaviour
     [SerializeField] private StringGameEvent changeActionMap = default;
     [SerializeField] private GameObject regularCamera = default;
     [SerializeField] private GameObject photoCamera = default;
+    [Header("Axis Configuration")]
+    [SerializeField] private BoolReference isXCameraInverted = default;
+    [SerializeField] private BoolReference isYCameraInverted = default;
 
     private PlayerControls playerControl;
     private bool photoCameraIsActive;
@@ -65,11 +68,13 @@ public class CameraController : MonoBehaviour
         {
             return;
         }
+        var xInvertedFactor = Utils.AxisCheck(isXCameraInverted.Value);
+        var yInvertedFactor = Utils.AxisCheck(isYCameraInverted.Value);
 
         var currentRotation = photoCamera.transform.rotation;
-        var xValue = currentRotation.x + (direction.y * cameraRotationSpeed.Value);
-        var yValue = currentRotation.y + (direction.x * cameraRotationSpeed.Value);
-        var nextRotation = new Vector3(xValue, yValue, currentRotation.z);
+        var xValue = currentRotation.x + (direction.y * cameraRotationSpeed.Value) * yInvertedFactor;
+        var yValue = currentRotation.y + (direction.x * cameraRotationSpeed.Value) * xInvertedFactor;
+        var nextRotation = new Vector3(-xValue, yValue, currentRotation.z);
         photoCamera.transform.Rotate(nextRotation);
     }
 }

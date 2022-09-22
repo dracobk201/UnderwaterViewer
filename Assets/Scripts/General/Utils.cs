@@ -27,5 +27,17 @@ public static class Utils
         targetCanvasGroup.blocksRaycasts = value;
     }
 
+    public static int AxisCheck(bool value)
+    {
+        int invertedFactor = 1;
+
+        if (value)
+        {
+            invertedFactor = -1;
+        }
+
+        return invertedFactor;
+    }
+
     #endregion
 }

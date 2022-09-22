@@ -391,6 +391,14 @@ MonoBehaviour:
     _useConstant: 0
     _constantValue: 0
     _variable: {fileID: 11400000, guid: 66207395ce675584b85190ac397369c9, type: 2}
+  isXMovementInverted:
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: 2ee2a1bc01996224a901e058739f26d4, type: 2}
+  isYMovementInverted:
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: e22422ed6d0d6be4697a7641247df64c, type: 2}
 --- !u!114 &8712969698679210632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +418,14 @@ MonoBehaviour:
   changeActionMap: {fileID: 11400000, guid: c75c98da45d70144d984f5a0b1e17063, type: 2}
   regularCamera: {fileID: 5003016323547698783}
   photoCamera: {fileID: 8121378220930815914}
+  isXCameraInverted:
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: c04967e826a208047803e6d0fdbbf5a9, type: 2}
+  isYCameraInverted:
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: 858bfd644ae882f4ab7be5a51063599f, type: 2}
 --- !u!54 &7378268964258410262
 Rigidbody:
   m_ObjectHideFlags: 0

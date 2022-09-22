@@ -673,10 +673,10 @@ RectTransform:
   m_Father: {fileID: 8482967787762783560}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 452.32324, y: 1186.0283}
-  m_SizeDelta: {x: 265.3536, y: 297.9434}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -153.828, y: -154.08691}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5699398882999078577
 CanvasRenderer:
@@ -759,7 +759,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8403024972992652790}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6306528388969730148}
+        m_TargetAssemblyTypeName: GameCanvasController, Assembly-CSharp
+        m_MethodName: PauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6314127132524549911
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,6 +873,8 @@ GameObject:
   - component: {fileID: 8482967787577797501}
   - component: {fileID: 6306528388969730148}
   - component: {fileID: 1852936434884015560}
+  - component: {fileID: 7119240843595408821}
+  - component: {fileID: 947401706439347660}
   m_Layer: 5
   m_Name: Game
   m_TagString: Untagged
@@ -901,6 +915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af708607a8275e7469eb2f450066f8f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelCanvasGroup: {fileID: 1231389553755199598}
+  showPauseMenu: {fileID: 11400000, guid: c5f4705131744d84a8c86654526ea3b4, type: 2}
   normalSetupPanel: {fileID: 1909145267065130710}
   cameraSetupPanel: {fileID: 1660147182304180096}
 --- !u!114 &1852936434884015560
@@ -936,6 +952,72 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _debugValue: 
+--- !u!114 &7119240843595408821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8482967787577797500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: fb496a8a09a0bad44bb75cd256ec17ce,
+    type: 2}
+  _event: {fileID: 11400000, guid: fb496a8a09a0bad44bb75cd256ec17ce, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6306528388969730148}
+        m_TargetAssemblyTypeName: GameCanvasController, Assembly-CSharp
+        m_MethodName: ShowPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &947401706439347660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8482967787577797500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: c5f4705131744d84a8c86654526ea3b4,
+    type: 2}
+  _event: {fileID: 11400000, guid: c5f4705131744d84a8c86654526ea3b4, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6306528388969730148}
+        m_TargetAssemblyTypeName: GameCanvasController, Assembly-CSharp
+        m_MethodName: HidePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8482967787762783559
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +1028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8482967787762783560}
   - component: {fileID: 8482967787762783561}
+  - component: {fileID: 1231389553755199598}
   m_Layer: 5
   m_Name: Game Container
   m_TagString: Untagged
@@ -984,3 +1067,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8482967787762783559}
   m_CullTransparentMesh: 1
+--- !u!225 &1231389553755199598
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8482967787762783559}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

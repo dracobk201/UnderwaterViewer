@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
     {
         playerControl = new PlayerControls();
         photoCameraIsActive = false;
-        changeActionMap.Raise(Global.UnderwaterActionMap);
+        changeActionMap.Raise(Utils.UnderwaterActionMap);
         photoCameraInitialRotation = photoCamera.transform.rotation;
     }
 
@@ -50,12 +50,12 @@ public class CameraController : MonoBehaviour
         photoCameraIsActive = !photoCameraIsActive;
         if (photoCameraIsActive)
         {
-            changeActionMap.Raise(Global.CameraActionMap);
+            changeActionMap.Raise(Utils.CameraActionMap);
         }
         else
         {
             photoCamera.transform.rotation = photoCameraInitialRotation;
-            changeActionMap.Raise(Global.UnderwaterActionMap);
+            changeActionMap.Raise(Utils.UnderwaterActionMap);
         }
     }
 
@@ -67,7 +67,9 @@ public class CameraController : MonoBehaviour
         }
 
         var currentRotation = photoCamera.transform.rotation;
-        var nextRotation = new Vector3(currentRotation.x + (direction.y * cameraRotationSpeed.Value), currentRotation.y + (direction.x * cameraRotationSpeed.Value), currentRotation.z);
+        var xValue = currentRotation.x + (direction.y * cameraRotationSpeed.Value);
+        var yValue = currentRotation.y + (direction.x * cameraRotationSpeed.Value);
+        var nextRotation = new Vector3(xValue, yValue, currentRotation.z);
         photoCamera.transform.Rotate(nextRotation);
     }
 }

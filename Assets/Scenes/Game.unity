@@ -19840,6 +19840,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2935048284477873025, guid: be0eaceb272427e44aaae6744b370a3d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989579468988538272, guid: be0eaceb272427e44aaae6744b370a3d,
+        type: 3}
+      propertyPath: _previouslyRegisteredEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: c5f4705131744d84a8c86654526ea3b4,
+        type: 2}
+    - target: {fileID: 4486226476499483977, guid: be0eaceb272427e44aaae6744b370a3d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085788521449567705, guid: be0eaceb272427e44aaae6744b370a3d,
+        type: 3}
+      propertyPath: _previouslyRegisteredEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: fb496a8a09a0bad44bb75cd256ec17ce,
+        type: 2}
+    - target: {fileID: 5900076319934830922, guid: be0eaceb272427e44aaae6744b370a3d,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5900076319934830923, guid: be0eaceb272427e44aaae6744b370a3d,
         type: 3}
       propertyPath: m_Pivot.x
@@ -19950,6 +19977,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7088906898668028071, guid: be0eaceb272427e44aaae6744b370a3d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077920843686488006, guid: be0eaceb272427e44aaae6744b370a3d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8627216320963216294, guid: be0eaceb272427e44aaae6744b370a3d,
+        type: 3}
+      propertyPath: _previouslyRegisteredEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: fb496a8a09a0bad44bb75cd256ec17ce,
+        type: 2}
+    - target: {fileID: 8684094636137375391, guid: be0eaceb272427e44aaae6744b370a3d,
+        type: 3}
+      propertyPath: _previouslyRegisteredEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: c5f4705131744d84a8c86654526ea3b4,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be0eaceb272427e44aaae6744b370a3d, type: 3}
 --- !u!1001 &7378268963795639969

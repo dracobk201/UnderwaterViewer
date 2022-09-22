@@ -12,7 +12,7 @@ public class InputController : MonoBehaviour
     private void OnEnable()
     {
         playerControl.Enable();
-        SwitchActionMap(Global.UnderwaterActionMap);
+        SwitchActionMap(Utils.UnderwaterActionMap);
     }
 
     private void OnDisable()
@@ -22,12 +22,12 @@ public class InputController : MonoBehaviour
 
     public void SwitchActionMap(string mapName)
     {
-        if (mapName.Equals(Global.CameraActionMap))
+        if (mapName.Equals(Utils.CameraActionMap))
         {
             playerControl.Underwater.Enable();
             playerControl.Camera.Disable();
         }
-        else if (mapName.Equals(Global.UnderwaterActionMap))
+        else if (mapName.Equals(Utils.UnderwaterActionMap))
         {
             playerControl.Camera.Enable();
             playerControl.Underwater.Disable();

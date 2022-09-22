@@ -61,7 +61,7 @@ public class CreatureBehaviour : MonoBehaviour
     {
         var canMove = true;
         Collider[] colliders = Physics.OverlapSphere(newPosition, 1);
-        if (Array.Exists(colliders, x => x.CompareTag(Global.CreatureTag) || x.CompareTag(Global.PlayerTag)))
+        if (Array.Exists(colliders, x => x.CompareTag(Utils.CreatureTag) || x.CompareTag(Utils.PlayerTag)))
         {
             canMove = false;
         }

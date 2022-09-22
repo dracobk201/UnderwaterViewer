@@ -18,13 +18,6 @@ public class PauseCanvasController : MonoBehaviour
     [SerializeField] private FloatReference sfxVolume = default;
     [SerializeField] private GameEvent volumeUpdated = default;
 
-    [SerializeField] private Slider bgmSlider = default;
-    [SerializeField] private Slider sfxSlider = default;
-    [SerializeField] private Toggle invertedXMovement = default;
-    [SerializeField] private Toggle invertedYMovement = default;
-    [SerializeField] private Toggle invertedXCamera = default;
-    [SerializeField] private Toggle invertedYCamera = default;
-
     public void Continue()
     {
         isGamePaused.Value = false;

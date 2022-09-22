@@ -416,6 +416,11 @@ MonoBehaviour:
     _constantValue: 0
     _variable: {fileID: 11400000, guid: dbd24920891cfaf45bd4d0bd721ca10b, type: 2}
   changeActionMap: {fileID: 11400000, guid: c75c98da45d70144d984f5a0b1e17063, type: 2}
+  screenshotTaken: {fileID: 11400000, guid: 101408dd2d863fa4cb452422739f8485, type: 2}
+  screenshotTakenTexture:
+    _useConstant: 0
+    _constantValue: {fileID: 0}
+    _variable: {fileID: 11400000, guid: 45d648b00f674d94ca4027e76511eefb, type: 2}
   regularCamera: {fileID: 5003016323547698783}
   photoCamera: {fileID: 8121378220930815914}
   isXCameraInverted:

@@ -1,13 +1,44 @@
 {
-    "m_SelectedDeviceId": "",
+    "m_SelectedDeviceId": "efab109761f0",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "efab109761f0",
+        "name": "com.PakataGames.UnderwaterViewer",
+        "processId": 21483,
         "exited": false
     },
     "m_SelectedPriority": 0,
-    "m_KnownPackagesForSerialization": [],
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "efab109761f0",
+            "name": "com.PakataGames.UnderwaterViewer",
+            "processId": 11582,
+            "exited": true
+        },
+        {
+            "deviceId": "efab109761f0",
+            "name": "com.android.launcher3",
+            "processId": 2771,
+            "exited": true
+        },
+        {
+            "deviceId": "efab109761f0",
+            "name": "com.PakataGames.UnderwaterViewer",
+            "processId": 11912,
+            "exited": true
+        },
+        {
+            "deviceId": "efab109761f0",
+            "name": "com.google.android.deskclock",
+            "processId": 7437,
+            "exited": true
+        },
+        {
+            "deviceId": "efab109761f0",
+            "name": "com.PakataGames.UnderwaterViewer",
+            "processId": 21483,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {
@@ -41,9 +72,20 @@
         ]
     },
     "m_MemoryViewerState": {
-        "MemoryWindowHeight": 0.0,
-        "MemoryWindowWidth": 0.0,
-        "MemoryTypeEnabled": [],
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
         "MemoryGroup": 2,
         "Behavior": 0
     },

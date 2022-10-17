@@ -104,7 +104,7 @@ public class CameraController : MonoBehaviour
         targetCamera.targetTexture = null;
         RenderTexture.active = null;
 
-        string filename = $"Capture-{System.DateTime.Now.ToString("yyyyMMddHHmmssfff")}.png";
+        string filename = $"Capture-{DateTime.Now.ToString("yyyyMMddHHmmssfff")}.png";
         byte[] fileHeader = null;
         byte[] fileData = null;
 

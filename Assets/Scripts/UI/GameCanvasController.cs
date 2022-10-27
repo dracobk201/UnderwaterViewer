@@ -12,6 +12,7 @@ public class GameCanvasController : MonoBehaviour
 
     [SerializeField] private GameObject normalSetupPanel = default;
     [SerializeField] private GameObject cameraSetupPanel = default;
+    [SerializeField] private GameObject lastPhotoTakenFrame = default;
     [SerializeField] private Image lastPhotoTakenImage = default;
 
     public void ChangeSetupPanel(string targetPanel)
@@ -53,12 +54,12 @@ public class GameCanvasController : MonoBehaviour
 
     private IEnumerator ShowScreenshotCoroutine(Texture2D lastPhotoTakenTexture)
     {
-        lastPhotoTakenImage.gameObject.SetActive(true);
+        lastPhotoTakenFrame.gameObject.SetActive(true);
         //lastPhotoTakenImage.material.mainTexture = lastPhotoTakenTexture;
         Rect rect = new Rect(0, 0, lastPhotoTakenTexture.width, lastPhotoTakenTexture.height);
         lastPhotoTakenImage.sprite = Sprite.Create(lastPhotoTakenTexture, rect, new Vector2(0.5f, 0.5f), 100);
         yield return new WaitForSeconds(1);
-        lastPhotoTakenImage.gameObject.SetActive(false);
+        lastPhotoTakenFrame.gameObject.SetActive(false);
     }
          
 }

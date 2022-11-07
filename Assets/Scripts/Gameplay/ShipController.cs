@@ -1,8 +1,10 @@
 using ScriptableObjectArchitecture;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ShipController : MonoBehaviour
 {
+    [SerializeField] private BoolReference photoCameraIsActive = default;
     [SerializeField] private Rigidbody shipRigidbody = default;
     [SerializeField] private GameObject shipLantern = default;
     [SerializeField] private FloatReference shipForwardAcceleration = default;
@@ -11,6 +13,7 @@ public class ShipController : MonoBehaviour
     [Header("Axis Configuration")]
     [SerializeField] private BoolReference isXMovementInverted = default;
     [SerializeField] private BoolReference isYMovementInverted = default;
+
     private PlayerControls playerControl;
 
     private void Awake()
@@ -48,6 +51,15 @@ public class ShipController : MonoBehaviour
         }
     }
 
+    public void GettingSwipeDirection(Vector2 directionValue)
+    {
+        if (photoCameraIsActive.Value)
+        {
+            return;
+        }
+        MoveAndRotate(directionValue);
+    }
+
     private void MoveAndRotate(Vector2 axisValue)
     {
         Move(axisValue.y);
@@ -73,4 +85,5 @@ public class ShipController : MonoBehaviour
         var force = transform.forward * shipForwardAcceleration.Value;
         shipRigidbody.AddForce(force, ForceMode.Acceleration);
     }
+
 }

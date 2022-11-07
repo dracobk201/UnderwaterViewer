@@ -33,7 +33,7 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""id"": ""f4ba96c5-2c27-4eb6-b790-8f8180035ed2"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": true
                 },
                 {
@@ -59,6 +59,24 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""type"": ""Button"",
                     ""id"": ""c9ef94fb-aa5c-4145-bb37-7a3dfa71d89a"",
                     ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PrimaryContact"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""a2901ff8-3bcd-4d86-b948-e8f53167cd70"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PrimaryPosition"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""c77a1101-1bc9-4a55-a33c-33b02b7ff147"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -196,6 +214,28 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""action"": ""ShowCamera"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6ef51285-854f-451e-b410-a47d13cb8040"",
+                    ""path"": ""<Touchscreen>/primaryTouch/press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryContact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ba7b98fa-e5bb-4d2e-b9e6-505a7b803aa1"",
+                    ""path"": ""<Touchscreen>/primaryTouch/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryPosition"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -226,6 +266,24 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""type"": ""Button"",
                     ""id"": ""ec838b77-12ec-4b12-bab4-388f76d52ac7"",
                     ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PrimaryContact"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""17bb52e9-e567-45ea-b1cf-fc7ee0428159"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PrimaryPosition"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""74604713-cccd-4a6b-90e2-beca1cb1495e"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -341,6 +399,28 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                     ""action"": ""ExitCamera"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b4aea4e6-dcb0-40e4-b2da-c58757c53777"",
+                    ""path"": ""<Touchscreen>/primaryTouch/press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryContact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2e1c97ce-10f5-438d-8a73-1ea319dd1f7f"",
+                    ""path"": ""<Touchscreen>/primaryTouch/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PrimaryPosition"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -353,11 +433,15 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         m_Underwater_Light = m_Underwater.FindAction("Light", throwIfNotFound: true);
         m_Underwater_Propulsion = m_Underwater.FindAction("Propulsion", throwIfNotFound: true);
         m_Underwater_ShowCamera = m_Underwater.FindAction("ShowCamera", throwIfNotFound: true);
+        m_Underwater_PrimaryContact = m_Underwater.FindAction("PrimaryContact", throwIfNotFound: true);
+        m_Underwater_PrimaryPosition = m_Underwater.FindAction("PrimaryPosition", throwIfNotFound: true);
         // Camera
         m_Camera = asset.FindActionMap("Camera", throwIfNotFound: true);
         m_Camera_Rotation = m_Camera.FindAction("Rotation", throwIfNotFound: true);
         m_Camera_Shoot = m_Camera.FindAction("Shoot", throwIfNotFound: true);
         m_Camera_ExitCamera = m_Camera.FindAction("ExitCamera", throwIfNotFound: true);
+        m_Camera_PrimaryContact = m_Camera.FindAction("PrimaryContact", throwIfNotFound: true);
+        m_Camera_PrimaryPosition = m_Camera.FindAction("PrimaryPosition", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -421,6 +505,8 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Underwater_Light;
     private readonly InputAction m_Underwater_Propulsion;
     private readonly InputAction m_Underwater_ShowCamera;
+    private readonly InputAction m_Underwater_PrimaryContact;
+    private readonly InputAction m_Underwater_PrimaryPosition;
     public struct UnderwaterActions
     {
         private @PlayerControls m_Wrapper;
@@ -429,6 +515,8 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         public InputAction @Light => m_Wrapper.m_Underwater_Light;
         public InputAction @Propulsion => m_Wrapper.m_Underwater_Propulsion;
         public InputAction @ShowCamera => m_Wrapper.m_Underwater_ShowCamera;
+        public InputAction @PrimaryContact => m_Wrapper.m_Underwater_PrimaryContact;
+        public InputAction @PrimaryPosition => m_Wrapper.m_Underwater_PrimaryPosition;
         public InputActionMap Get() { return m_Wrapper.m_Underwater; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -450,6 +538,12 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @ShowCamera.started -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnShowCamera;
                 @ShowCamera.performed -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnShowCamera;
                 @ShowCamera.canceled -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnShowCamera;
+                @PrimaryContact.started -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnPrimaryContact;
+                @PrimaryContact.performed -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnPrimaryContact;
+                @PrimaryContact.canceled -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnPrimaryContact;
+                @PrimaryPosition.started -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnPrimaryPosition;
+                @PrimaryPosition.performed -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnPrimaryPosition;
+                @PrimaryPosition.canceled -= m_Wrapper.m_UnderwaterActionsCallbackInterface.OnPrimaryPosition;
             }
             m_Wrapper.m_UnderwaterActionsCallbackInterface = instance;
             if (instance != null)
@@ -466,6 +560,12 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @ShowCamera.started += instance.OnShowCamera;
                 @ShowCamera.performed += instance.OnShowCamera;
                 @ShowCamera.canceled += instance.OnShowCamera;
+                @PrimaryContact.started += instance.OnPrimaryContact;
+                @PrimaryContact.performed += instance.OnPrimaryContact;
+                @PrimaryContact.canceled += instance.OnPrimaryContact;
+                @PrimaryPosition.started += instance.OnPrimaryPosition;
+                @PrimaryPosition.performed += instance.OnPrimaryPosition;
+                @PrimaryPosition.canceled += instance.OnPrimaryPosition;
             }
         }
     }
@@ -477,6 +577,8 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Camera_Rotation;
     private readonly InputAction m_Camera_Shoot;
     private readonly InputAction m_Camera_ExitCamera;
+    private readonly InputAction m_Camera_PrimaryContact;
+    private readonly InputAction m_Camera_PrimaryPosition;
     public struct CameraActions
     {
         private @PlayerControls m_Wrapper;
@@ -484,6 +586,8 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         public InputAction @Rotation => m_Wrapper.m_Camera_Rotation;
         public InputAction @Shoot => m_Wrapper.m_Camera_Shoot;
         public InputAction @ExitCamera => m_Wrapper.m_Camera_ExitCamera;
+        public InputAction @PrimaryContact => m_Wrapper.m_Camera_PrimaryContact;
+        public InputAction @PrimaryPosition => m_Wrapper.m_Camera_PrimaryPosition;
         public InputActionMap Get() { return m_Wrapper.m_Camera; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -502,6 +606,12 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @ExitCamera.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnExitCamera;
                 @ExitCamera.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnExitCamera;
                 @ExitCamera.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnExitCamera;
+                @PrimaryContact.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryContact;
+                @PrimaryContact.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryContact;
+                @PrimaryContact.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryContact;
+                @PrimaryPosition.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryPosition;
+                @PrimaryPosition.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryPosition;
+                @PrimaryPosition.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryPosition;
             }
             m_Wrapper.m_CameraActionsCallbackInterface = instance;
             if (instance != null)
@@ -515,6 +625,12 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
                 @ExitCamera.started += instance.OnExitCamera;
                 @ExitCamera.performed += instance.OnExitCamera;
                 @ExitCamera.canceled += instance.OnExitCamera;
+                @PrimaryContact.started += instance.OnPrimaryContact;
+                @PrimaryContact.performed += instance.OnPrimaryContact;
+                @PrimaryContact.canceled += instance.OnPrimaryContact;
+                @PrimaryPosition.started += instance.OnPrimaryPosition;
+                @PrimaryPosition.performed += instance.OnPrimaryPosition;
+                @PrimaryPosition.canceled += instance.OnPrimaryPosition;
             }
         }
     }
@@ -525,11 +641,15 @@ public partial class @PlayerControls : IInputActionCollection2, IDisposable
         void OnLight(InputAction.CallbackContext context);
         void OnPropulsion(InputAction.CallbackContext context);
         void OnShowCamera(InputAction.CallbackContext context);
+        void OnPrimaryContact(InputAction.CallbackContext context);
+        void OnPrimaryPosition(InputAction.CallbackContext context);
     }
     public interface ICameraActions
     {
         void OnRotation(InputAction.CallbackContext context);
         void OnShoot(InputAction.CallbackContext context);
         void OnExitCamera(InputAction.CallbackContext context);
+        void OnPrimaryContact(InputAction.CallbackContext context);
+        void OnPrimaryPosition(InputAction.CallbackContext context);
     }
 }

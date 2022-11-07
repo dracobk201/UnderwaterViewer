@@ -1,9 +1,11 @@
 using UnityEngine;
 using ScriptableObjectArchitecture;
 using System;
+using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour
 {
+    [SerializeField] private BoolReference photoCameraIsActive = default;
     [SerializeField] private FloatReference cameraRotationSpeed = default;
     [SerializeField] private StringGameEvent changeActionMap = default;
     [SerializeField] private StringGameEvent screenshotTaken = default;
@@ -16,13 +18,13 @@ public class CameraController : MonoBehaviour
     [SerializeField] private BoolReference isYCameraInverted = default;
 
     private PlayerControls playerControl;
-    private bool photoCameraIsActive;
+    
     private Quaternion photoCameraInitialRotation;
 
     private void Awake()
     {
         playerControl = new PlayerControls();
-        photoCameraIsActive = false;
+        photoCameraIsActive.Value = false;
         changeActionMap.Raise(Utils.UnderwaterActionMap);
         photoCameraInitialRotation = photoCamera.transform.rotation;
     }
@@ -43,7 +45,7 @@ public class CameraController : MonoBehaviour
         {
             ToogleCamera();
         }
-        if (photoCameraIsActive)
+        if (photoCameraIsActive.Value)
         {
             var move = playerControl.Camera.Rotation.ReadValue<Vector2>();
             Rotate(move);
@@ -58,8 +60,8 @@ public class CameraController : MonoBehaviour
     {
         regularCamera.SetActive(!regularCamera.activeInHierarchy);
         photoCamera.SetActive(!photoCamera.activeInHierarchy);
-        photoCameraIsActive = !photoCameraIsActive;
-        if (photoCameraIsActive)
+        photoCameraIsActive.Value = !photoCameraIsActive.Value;
+        if (photoCameraIsActive.Value)
         {
             changeActionMap.Raise(Utils.CameraActionMap);
         }

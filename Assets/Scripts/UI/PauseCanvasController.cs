@@ -14,9 +14,30 @@ public class PauseCanvasController : MonoBehaviour
     [SerializeField] private BoolReference isYMovementInverted = default;
     [SerializeField] private BoolReference isXCameraInverted = default;
     [SerializeField] private BoolReference isYCameraInverted = default;
+    [SerializeField] private BoolReference isSwipeDetectionActive = default;
     [SerializeField] private FloatReference bgmVolume = default;
     [SerializeField] private FloatReference sfxVolume = default;
     [SerializeField] private GameEvent volumeUpdated = default;
+
+    [Header("Canvas")]
+    [SerializeField] private Slider bgmVolumeSlider = default;
+    [SerializeField] private Slider sfxVolumeSlider = default;
+    [SerializeField] private Toggle isXMovementInvertedToggle = default;
+    [SerializeField] private Toggle isYMovementInvertedToggle = default;
+    [SerializeField] private Toggle isXCameraInvertedToggle = default;
+    [SerializeField] private Toggle isYCameraInvertedToggle = default;
+    [SerializeField] private Toggle isSwipeDetectionActiveToggle = default;
+
+    private void Start()
+    {
+        bgmVolumeSlider.value = bgmVolume.Value;
+        sfxVolumeSlider.value = sfxVolume.Value;
+        isXMovementInvertedToggle.isOn = isXMovementInverted.Value;
+        isYMovementInvertedToggle.isOn = isYMovementInverted.Value;
+        isXCameraInvertedToggle.isOn = isXCameraInverted.Value;
+        isYCameraInvertedToggle.isOn = isYCameraInverted.Value;
+        isSwipeDetectionActiveToggle.isOn = isSwipeDetectionActive.Value;
+    }
 
     public void Continue()
     {
@@ -54,6 +75,11 @@ public class PauseCanvasController : MonoBehaviour
     public void OnInvertedYCameraToggle(bool value)
     {
         isYCameraInverted.Value = value;
+    }
+
+    public void OnSwipeDetectionToggle(bool value)
+    {
+        isSwipeDetectionActive.Value = value;
     }
 
     public void ShowPanel()

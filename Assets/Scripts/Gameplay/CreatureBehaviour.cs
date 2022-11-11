@@ -1,81 +1,101 @@
 using ScriptableObjectArchitecture;
-using System;
 using UnityEngine;
 
 public class CreatureBehaviour : MonoBehaviour
 {
     [SerializeField] private Rigidbody creatureRigidbody = default;
-    [SerializeField] private FloatReference creatureVelocity = default;
-    [SerializeField] private FloatReference minTimeInterval = default;
-    [SerializeField] private FloatReference maxTimeInterval = default;
-    [SerializeField] private Vector3Reference anchorVector = default;
-    private float currentTime = 0;
-    private float randomTime = 0;
-    private Vector3 topLeft;
-    private Vector3 bottomLeft;
-    private Vector3 topRight;
-    private Vector3 bottomRight;
-    private Vector3 lastTargetPosition;
+    [SerializeField] private FloatReference minFishSpeed = default;
+    [SerializeField] private FloatReference maxFishSpeed = default;
+    [SerializeField] private FloatReference rotationSpeed = default;
+    [SerializeField] private FloatReference neighbourDistance = default;
+    [SerializeField] private FloatReference resetSpeedProbability = default;
+    [SerializeField] private FloatReference applyRulesProbability = default;
+    [SerializeField] private Vector3Reference swimLimits = default;
+
+    private GameObject[] fishSchooling;
+    private bool turning = false;
+    private float speed = 0;
+    private Vector3 schoolingPosition;
+    private Vector3 schoolingGoalPosition;
+    private Bounds swimingBoundaries;
+
+    private void Start()
+    {
+        FlockBehaviour flockBehaviour = transform.parent.GetComponent<FlockBehaviour>();
+        schoolingPosition = flockBehaviour.transform.position;
+        fishSchooling = flockBehaviour.schoolingCollection;
+        schoolingGoalPosition = flockBehaviour.goalPosition;
+        speed = Random.Range(minFishSpeed.Value, maxFishSpeed.Value);
+    }
 
     private void Update()
     {
-        currentTime += Time.deltaTime;
-        if (currentTime >= randomTime)
+        swimingBoundaries = new Bounds(schoolingPosition, swimLimits.Value * 2);
+        if (!swimingBoundaries.Contains(transform.position))
         {
-            Move();
-            currentTime = 0;
-            randomTime = UnityEngine.Random.Range(minTimeInterval.Value, maxTimeInterval.Value);
+            Vector3 direction = schoolingPosition - transform.position;
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotationSpeed.Value * Time.deltaTime);
+        }
+        else
+        {
+            if (Random.value < resetSpeedProbability.Value)
+            {
+                speed = Random.Range(minFishSpeed.Value, maxFishSpeed.Value);
+            }
+
+            if (Random.value < applyRulesProbability.Value)
+            {
+                ApplyRules();
+            }
+        }
+
+        transform.Translate(0, 0, speed * Time.deltaTime);
+    }
+
+    private void ApplyRules()
+    {
+        Vector3 vectorCentre = Vector3.zero;
+        Vector3 vectorAvoid = Vector3.zero;
+        float groupSpeed = 0.01f;
+        float nextNeighbourDistance;
+        int groupSize = 0;
+
+        foreach (GameObject fish in fishSchooling)
+        {
+            if (fish != gameObject)
+            {
+                nextNeighbourDistance = Vector3.Distance(fish.transform.position, transform.position);
+                if (nextNeighbourDistance <= neighbourDistance.Value)
+                {
+                    vectorCentre += fish.transform.position;
+                    groupSize++;
+
+                    if (nextNeighbourDistance < 1.0f)
+                    {
+                        vectorAvoid += (transform.position - fish.transform.position);
+                    }
+
+                    CreatureBehaviour anotherCreature = fish.GetComponent<CreatureBehaviour>();
+                    groupSpeed += anotherCreature.speed;
+                }
+            }
+        }
+
+        if (groupSize > 0)
+        {
+            vectorCentre = vectorCentre / groupSize + (schoolingGoalPosition - transform.position);
+            
+            speed = groupSpeed / groupSize;
+            if (speed > maxFishSpeed.Value)
+            {
+                speed = maxFishSpeed.Value;
+            }
+
+            Vector3 direction = (vectorCentre + vectorAvoid) - transform.position;
+            if (direction != Vector3.zero)
+            {
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(direction), rotationSpeed.Value * Time.deltaTime);
+            }
         }
     }
-
-    private void Move()
-    {
-        SetupRotation(lastTargetPosition);
-
-        topLeft = transform.forward + new Vector3(-anchorVector.Value.x, anchorVector.Value.y);
-        bottomLeft = transform.forward - new Vector3(anchorVector.Value.x, anchorVector.Value.y);
-        topRight = transform.forward + new Vector3(anchorVector.Value.x, anchorVector.Value.y);
-        bottomRight = transform.forward + new Vector3(anchorVector.Value.x, -anchorVector.Value.y);
-
-        var xValue = UnityEngine.Random.Range(topLeft.x, topRight.x);
-        var yValue = UnityEngine.Random.Range(topLeft.y, bottomRight.y);
-        var zValue = UnityEngine.Random.Range(anchorVector.Value.z * 0.05f, anchorVector.Value.z);
-        var targetPosition = new Vector3(xValue, yValue, zValue) * creatureVelocity.Value;
-        if (!CheckNewPosition(targetPosition))
-        {
-            return;
-        }
-        lastTargetPosition = targetPosition;
-        SetupRotation(targetPosition);
-        creatureRigidbody.AddRelativeForce(targetPosition, ForceMode.Acceleration);
-    }
-
-    private void SetupRotation(Vector3 targetPosition)
-    {
-        Vector3 relativePos = targetPosition - transform.position;
-        Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
-        transform.rotation = rotation;
-    }
-
-    private bool CheckNewPosition(Vector3 newPosition)
-    {
-        var canMove = true;
-        Collider[] colliders = Physics.OverlapSphere(newPosition, 1);
-        if (Array.Exists(colliders, x => x.CompareTag(Utils.CreatureTag) || x.CompareTag(Utils.PlayerTag)))
-        {
-            canMove = false;
-        }
-        return canMove;
-    }
-
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.blue;
-
-
-    //    Gizmos.DrawRay(transform.position, topLeft);
-    //    Gizmos.DrawRay(transform.position, bottomLeft);
-    //    Gizmos.DrawRay(transform.position, topRight);
-    //    Gizmos.DrawRay(transform.position, bottomRight);
-    //}
 }

@@ -13,7 +13,6 @@ public class CreatureBehaviour : MonoBehaviour
     [SerializeField] private Vector3Reference swimLimits = default;
 
     private GameObject[] fishSchooling;
-    private bool turning = false;
     private float speed = 0;
     private Vector3 schoolingPosition;
     private Vector3 schoolingGoalPosition;

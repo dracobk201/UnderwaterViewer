@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &493687698134077900
 Transform:
@@ -112,9 +112,53 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 493687698134077900}
     m_Modifications:
+    - target: {fileID: 1147727352381810, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193867595322356, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209106505856492, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212156884431150, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239711423687160, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350702958926804, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1564193720640578, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582573999263476, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644709096897244, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1733855665772604, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
       propertyPath: m_Name
       value: GreenFish
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733855665772604, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970910271798990, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4181184143497572, guid: b0489fdb6d64a4a4ba8e194e561d60cd, type: 3}
       propertyPath: m_RootOrder

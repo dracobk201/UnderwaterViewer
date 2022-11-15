@@ -35,10 +35,7 @@ public class ShipController : MonoBehaviour
     {
         var move = playerControl.Underwater.Move.ReadValue<Vector2>();
 
-        if (playerControl.Underwater.Move.triggered)
-        {
-            MoveAndRotate(move);
-        }
+        MoveAndRotate(move);
 
         if (playerControl.Underwater.Light.triggered)
         {
@@ -69,7 +66,8 @@ public class ShipController : MonoBehaviour
     private void Rotate(float xValue)
     {
         var invertedFactor = Utils.AxisCheck(isYMovementInverted.Value);
-        shipRigidbody.AddTorque(transform.up * shipRotationAcceleration.Value * xValue * invertedFactor);
+        var newXRotation = transform.up * shipRotationAcceleration.Value * xValue * invertedFactor;
+        transform.Rotate(newXRotation);
     }
 
     private void Move(float yValue)
@@ -77,7 +75,7 @@ public class ShipController : MonoBehaviour
         var force = Vector3.zero;
         var invertedFactor = Utils.AxisCheck(isXMovementInverted.Value);
         force.y = yValue * shipVerticalAcceleration.Value * invertedFactor;
-        shipRigidbody.AddForce(force, ForceMode.Acceleration);
+        transform.Translate(force);
     }
 
     private void Propulsion()

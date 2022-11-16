@@ -8,8 +8,8 @@ public class FlockBehaviour : MonoBehaviour
 
     [Header("Data")]
     [SerializeField] private GameObject fishPrefab = default;
-    [SerializeField] private IntReference minfishSchoolingSize = default;
-    [SerializeField] private IntReference maxfishSchoolingSize = default;
+    [SerializeField] private IntReference minFishSchoolingSize = default;
+    [SerializeField] private IntReference maxFishSchoolingSize = default;
     [SerializeField] private FloatReference changeGoalProbability = default;
     [SerializeField] private Vector3Reference swimLimits = default;
     [HideInInspector] public Vector3 goalPosition;
@@ -17,7 +17,7 @@ public class FlockBehaviour : MonoBehaviour
 
     private void Start()
     {
-        schoolingCollection = new GameObject[Random.Range(minfishSchoolingSize.Value, maxfishSchoolingSize.Value)];
+        schoolingCollection = new GameObject[Random.Range(minFishSchoolingSize.Value, maxFishSchoolingSize.Value)];
         for (int i = 0; i < schoolingCollection.Length; i++)
         {
 

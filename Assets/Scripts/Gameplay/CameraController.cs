@@ -19,14 +19,14 @@ public class CameraController : MonoBehaviour
 
     private PlayerControls playerControl;
     
-    private Quaternion photoCameraInitialRotation;
+    private Transform photoCameraInitialTransform;
 
     private void Awake()
     {
         playerControl = new PlayerControls();
         photoCameraIsActive.Value = false;
         changeActionMap.Raise(Utils.UnderwaterActionMap);
-        photoCameraInitialRotation = photoCamera.transform.rotation;
+        photoCameraInitialTransform = photoCamera.transform;
     }
 
     private void OnEnable()
@@ -67,7 +67,7 @@ public class CameraController : MonoBehaviour
         }
         else
         {
-            photoCamera.transform.rotation = photoCameraInitialRotation;
+            photoCamera.transform.SetPositionAndRotation(photoCameraInitialTransform.position, photoCameraInitialTransform.rotation);
             changeActionMap.Raise(Utils.UnderwaterActionMap);
         }
     }

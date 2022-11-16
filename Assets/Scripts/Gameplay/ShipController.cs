@@ -42,10 +42,7 @@ public class ShipController : MonoBehaviour
             shipLantern.SetActive(!shipLantern.activeInHierarchy);
         }
 
-        if (playerControl.Underwater.Propulsion.triggered)
-        {
-            Propulsion();
-        }
+        Propulsion(playerControl.Underwater.Propulsion.ReadValue<float>());
     }
 
     public void GettingSwipeDirection(Vector2 directionValue)
@@ -78,8 +75,12 @@ public class ShipController : MonoBehaviour
         transform.Translate(force);
     }
 
-    private void Propulsion()
+    private void Propulsion(float throllingValue)
     {
+        if (throllingValue < 0.05f)
+        {
+            return;
+        }
         var force = transform.forward * shipForwardAcceleration.Value;
         shipRigidbody.AddForce(force, ForceMode.Acceleration);
     }

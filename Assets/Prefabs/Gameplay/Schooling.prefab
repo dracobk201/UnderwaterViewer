@@ -50,11 +50,11 @@ MonoBehaviour:
     _variable: {fileID: 11400000, guid: 623a85e385185ca4c809a605c270faf4, type: 2}
   fishPrefab: {fileID: 493687698134077903, guid: 10b26a070e3836f4d9d9d61667caa9bb,
     type: 3}
-  minfishSchoolingSize:
+  minFishSchoolingSize:
     _useConstant: 0
     _constantValue: 0
     _variable: {fileID: 11400000, guid: f6fbb8c21382baa4a891d3355332f4e9, type: 2}
-  maxfishSchoolingSize:
+  maxFishSchoolingSize:
     _useConstant: 0
     _constantValue: 0
     _variable: {fileID: 11400000, guid: 72cdc9dac3528ad44bce0ae186337fd3, type: 2}

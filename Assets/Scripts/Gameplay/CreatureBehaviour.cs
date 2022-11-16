@@ -17,6 +17,7 @@ public class CreatureBehaviour : MonoBehaviour
     private Vector3 schoolingPosition;
     private Vector3 schoolingGoalPosition;
     private Bounds swimingBoundaries;
+    private GameObject playerReference;
 
     private void Start()
     {
@@ -25,26 +26,35 @@ public class CreatureBehaviour : MonoBehaviour
         fishSchooling = flockBehaviour.schoolingCollection;
         schoolingGoalPosition = flockBehaviour.goalPosition;
         speed = Random.Range(minFishSpeed.Value, maxFishSpeed.Value);
+        playerReference = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update()
     {
         swimingBoundaries = new Bounds(schoolingPosition, swimLimits.Value * 2);
-        if (!swimingBoundaries.Contains(transform.position))
+        if (swimingBoundaries.Contains(playerReference.transform.position))
         {
-            Vector3 direction = schoolingPosition - transform.position;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotationSpeed.Value * Time.deltaTime);
+            Vector3 direction = playerReference.transform.position - transform.position;
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(-direction), rotationSpeed.Value * Time.deltaTime);
         }
         else
         {
-            if (Random.value < resetSpeedProbability.Value)
+            if (!swimingBoundaries.Contains(transform.position))
             {
-                speed = Random.Range(minFishSpeed.Value, maxFishSpeed.Value);
+                Vector3 direction = schoolingPosition - transform.position;
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotationSpeed.Value * Time.deltaTime);
             }
-
-            if (Random.value < applyRulesProbability.Value)
+            else
             {
-                ApplyRules();
+                if (Random.value < resetSpeedProbability.Value)
+                {
+                    speed = Random.Range(minFishSpeed.Value, maxFishSpeed.Value);
+                }
+
+                if (Random.value < applyRulesProbability.Value)
+                {
+                    ApplyRules();
+                }
             }
         }
 
